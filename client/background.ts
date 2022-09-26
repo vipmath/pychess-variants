@@ -14,7 +14,7 @@ function backgrounds() {
 class BackgroundSettings extends StringSettings {
 
     constructor() {
-        super('theme', 'light');
+        super('theme', 'dark');
     }
 
     update(): void {
