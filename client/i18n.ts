@@ -11,6 +11,7 @@ export function ngettext(msgid: string, plural: string, ...vars: any) { return i
 export function pgettext(msgctxt: string, msgid: string, ...vars: any) { return i18n.pgettext(msgctxt, msgid, vars); }
 
 export const LANGUAGES = {
+    ko: "한국어",    
     en: "English",
     de: "Deutsch",
     es: "Español",
@@ -19,7 +20,6 @@ export const LANGUAGES = {
     hu: "Magyar",
     it: "Italiano",
     ja: "日本語",
-    ko: "한국어",
     nl: "Nederlands",
     pl: "Polskie",
     pt: "Português",
@@ -31,6 +31,7 @@ export const LANGUAGES = {
 };
 
 const LANGUAGETEXT: {[key:string]: string} = {
+    ko: "언어",
     en: "Language",
     de: "Sprache",
     es: "Idioma",
@@ -39,7 +40,6 @@ const LANGUAGETEXT: {[key:string]: string} = {
     hu: "Nyelv",
     it: "Lingua",
     ja: "言語",
-    ko: "언어",
     nl: "Taal",
     pl: "Język ",
     pt: "Lingua",
@@ -92,7 +92,7 @@ export const translatedCustomStartPositions = [
 
 class LanguageSettings extends StringSettings {
     constructor() {
-        super('lang', 'en');
+        super('lang', 'ko');
     }
 
     update(): void {
