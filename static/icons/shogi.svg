@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
-
 <svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
@@ -14,8 +12,8 @@
    viewBox="0 0 13.229166 13.229167"
    version="1.1"
    id="svg1579"
-   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
-   sodipodi:docname="ShogiKing.svg">
+   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)"
+   sodipodi:docname="Shogi.svg">
   <defs
      id="defs1573">
     <inkscape:path-effect
@@ -45,11 +43,12 @@
      showgrid="false"
      units="px"
      showguides="true"
-     inkscape:window-width="1920"
-     inkscape:window-height="1017"
-     inkscape:window-x="-8"
-     inkscape:window-y="-8"
-     inkscape:window-maximized="1" />
+     inkscape:window-width="3840"
+     inkscape:window-height="2050"
+     inkscape:window-x="-12"
+     inkscape:window-y="-12"
+     inkscape:window-maximized="1"
+     inkscape:document-rotation="0" />
   <metadata
      id="metadata1576">
     <rdf:RDF>
@@ -58,7 +57,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -68,7 +67,7 @@
      id="layer1"
      transform="translate(0,-283.77082)">
     <path
-       style="fill:#3771c8;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.93406713;stroke-opacity:0.48743723"
+       style="fill:#8d6c46;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.93406713;stroke-opacity:0.48743723"
        d="M 25 1.7617188 L 9.2734375 7.2578125 L 4.9648438 48.238281 L 45.035156 48.238281 L 40.726562 7.2578125 L 25 1.7617188 z M 13.865234 16.6875 L 36.253906 16.6875 L 36.253906 19.058594 L 26.316406 19.058594 L 26.316406 25.736328 L 34.818359 25.736328 L 34.818359 27.783203 L 26.316406 27.783203 L 26.316406 35.322266 L 37.810547 35.322266 L 37.810547 37.693359 L 12.189453 37.693359 L 12.189453 35.322266 L 23.5625 35.322266 L 23.5625 27.783203 L 15.0625 27.783203 L 15.0625 25.736328 L 23.5625 25.736328 L 23.5625 19.058594 L 13.865234 19.058594 L 13.865234 16.6875 z "
        id="path3112"
        transform="matrix(0.26458333,0,0,0.26458333,0,283.77082)" />

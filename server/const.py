@@ -75,7 +75,7 @@ LOSERS = {
     "flag": FLAG,
 }
 
-GRANDS = ("xiangqi", "manchu", "grand", "grandhouse", "shako", "janggi")
+GRANDS = ("xiangqi", "manchu", "grand", "grandhouse", "shako", "janggi", "janggihouse")
 
 CONSERVATIVE_CAPA_FEN = "arnbqkbnrc/pppppppppp/10/10/10/10/PPPPPPPPPP/ARNBQKBNRC w KQkq - 0 1"
 
@@ -103,6 +103,7 @@ VARIANTS = (
     "xiangqi",
     "manchu",
     "janggi",
+    "janggihouse",    
     "minixiangqi",
     "capablanca",
     "capablanca960",
@@ -136,6 +137,7 @@ VARIANT_ICONS = {
     "sittuyin": ":",
     "shogi": "K",
     "janggi": "=",
+    "janggihouse": "=",    
     "xiangqi": "|",
     "chess": "M",
     "crazyhouse": "+",
@@ -316,6 +318,7 @@ TRANSLATED_VARIANT_NAMES = {
     "xiangqi": _("Xiangqi"),
     "manchu": _("Manchu"),
     "janggi": _("Janggi"),
+    "janggi": _("Janggihouse"),    
     "minixiangqi": _("Minixiangqi"),
     "capablanca": _("Capablanca"),
     "capablanca960": _("Capablanca960"),

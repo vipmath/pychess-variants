@@ -13,7 +13,7 @@
    version="1.1"
    id="svg1579"
    sodipodi:docname="Placement.svg"
-   inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
+   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)">
   <metadata
      id="metadata13412">
     <rdf:RDF>
@@ -22,6 +22,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -36,58 +37,59 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1920"
-     inkscape:window-height="1017"
+     inkscape:window-width="3840"
+     inkscape:window-height="2050"
      id="namedview13408"
      showgrid="false"
      inkscape:zoom="4.72"
      inkscape:cx="25"
      inkscape:cy="25"
-     inkscape:window-x="-8"
-     inkscape:window-y="-8"
+     inkscape:window-x="-12"
+     inkscape:window-y="-12"
      inkscape:window-maximized="1"
-     inkscape:current-layer="svg1579" />
+     inkscape:current-layer="svg1579"
+     inkscape:document-rotation="0" />
   <g
      id="layer1"
      transform="translate(0,-283.77082)"
-     style="fill:#88aa00;fill-opacity:1">
+     style="fill:#70787d;fill-opacity:0.99215686">
     <rect
-       style="opacity:1;fill:#88aa00;fill-opacity:1;stroke:none"
+       style="opacity:1;fill:#70787d;fill-opacity:0.99215686;stroke:none"
        id="rect828"
        width="2.6458333"
        height="2.6458333"
        x="1.3229166"
        y="285.09375" />
     <rect
-       style="opacity:1;fill:#88aa00;fill-opacity:1;stroke:none"
+       style="opacity:1;fill:#70787d;fill-opacity:0.99215686;stroke:none"
        id="rect830"
        width="2.6458333"
        height="2.6458333"
        x="5.2916665"
        y="285.09375" />
     <rect
-       style="opacity:1;fill:#88aa00;fill-opacity:1;stroke:none"
+       style="opacity:1;fill:#70787d;fill-opacity:0.99215686;stroke:none"
        id="rect832-3"
        width="2.6458333"
        height="2.6458333"
        x="1.322916"
        y="293.03122" />
     <rect
-       style="opacity:1;fill:#88aa00;fill-opacity:1;stroke:none"
+       style="opacity:1;fill:#70787d;fill-opacity:0.99215686;stroke:none"
        id="rect858"
        width="2.6458333"
        height="2.6458333"
        x="9.260417"
        y="285.09375" />
     <rect
-       style="opacity:1;fill:#88aa00;fill-opacity:1;stroke:none"
+       style="opacity:1;fill:#70787d;fill-opacity:0.99215686;stroke:none"
        id="rect830-6"
        width="2.6458333"
        height="2.6458333"
        x="5.291666"
        y="293.03119" />
     <rect
-       style="opacity:1;fill:#88aa00;fill-opacity:1;stroke:none"
+       style="opacity:1;fill:#70787d;fill-opacity:0.99215686;stroke:none"
        id="rect858-5"
        width="2.6458333"
        height="2.6458333"
