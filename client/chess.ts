@@ -274,6 +274,19 @@ export const VARIANTS: { [name: string]: Variant } = {
         pass: true, setup: true,
         icon: "=",
     }),
+	
+    coffeejanggi: new Variant({
+        name: "coffeejanggi", tooltip: () => _("Korean Chess, similar to Xiangqi but plays much differently. Tournament rules are used."),
+        startFen: "rnba1abnr/4k4/1c5c1/p1p1p1p1p/9/9/P1P1P1P1P/1C5C1/4K4/RNBA1ABNR w - - 0 1",
+        board: "janggi9x10", piece: "janggi",
+        firstColor: "Blue", secondColor: "Red",
+        pieceLetters: ["k", "a", "c", "r", "b", "n", "p"],
+        promoteableLetters: [],
+        timeControl: "byoyomi",
+        materialPoint: "janggi",
+        pass: true, setup: true,
+        icon: "=",
+    }),	
 
     janggihouse: new Variant({
         name: "janggihouse", tooltip: () => _("Korean Chess, similar to Xiangqi but plays much differently. Tournament rules are used."),
@@ -805,7 +818,7 @@ const variantGroups: { [ key: string ]: { variants: string[] } } = {
     standard: { variants: [ "chess", "crazyhouse", "placement", "atomic" ] },
     sea:      { variants: [ "makruk", "makpong", "cambodian", "sittuyin", "asean" ] },
     shogi:    { variants: [ "shogi", "minishogi", "kyotoshogi", "dobutsu", "gorogoroplus", "torishogi" ] },
-    xiangqi:  { variants: [ "xiangqi", "manchu", "janggi", "janggihouse", "minixiangqi" ] },
+    xiangqi:  { variants: [ "xiangqi", "manchu", "janggi", "coffeejanggi", "janggihouse", "minixiangqi" ] },
     fairy:    { variants: [ "capablanca", "capahouse", "seirawan", "shouse", "grand", "grandhouse", "shako", "shogun", "hoppelpoppel" ] },
     army:     { variants: [ "orda", "synochess", "shinobi", "empire", "ordamirror", "chak", "chennis" ] },
 };
@@ -1102,6 +1115,7 @@ export function notation(variant: Variant): cg.Notation {
 
     switch (variant.name) {
         case 'janggi':
+        case 'coffeejanggi':		
         case 'janggihouse':		
             cgNotation = cg.Notation.JANGGI;
             break;
