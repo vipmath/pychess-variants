@@ -1,4 +1,4 @@
 
 eval $(gp env -e)
-export URI=$LIANTICHESS_URI
+export URI=$URI
 python3 server/server.py
