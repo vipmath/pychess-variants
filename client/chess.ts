@@ -284,7 +284,7 @@ export const VARIANTS: { [name: string]: Variant } = {
         promoteableLetters: [],
         timeControl: "byoyomi",
         materialPoint: "janggi",
-        pass: true, setup: true,
+        pass: true,
         icon: "=",
     }),	
 
@@ -299,7 +299,7 @@ export const VARIANTS: { [name: string]: Variant } = {
         timeControl: "byoyomi",
         materialPoint: "janggi",
         captureToHand: true,
-        pass: true, setup: true,
+        pass: true,
         icon: "=",
     }),		
 
