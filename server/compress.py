@@ -33,6 +33,7 @@ V2C = {
     "kyotoshogi": "k",
     "shogun": "u",
     "janggi": "j",
+    "changgi": "j3",    
     "coffeejanggi": "j2",    
     "janggihouse": "j1",    
     "makpong": "l",
