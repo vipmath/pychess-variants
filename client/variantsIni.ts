@@ -27,6 +27,14 @@ moveRepetitionIllegal = true
 nFoldRule = 4
 nMoveRule = 100
 
+[racingkingsjanggi:changgi]
+startFen = 9/9/9/9/9/9/9/9/krnb1BNRK/crnc1CNRC w - - 0 1
+flagPiece = k
+whiteFlag = *10
+blackFlag = *10 
+flagMove = true
+checking = false
+
 # Hybrid variant of janggi and crazyhouse
 [janggihouse:janggimodern]
 startFen = rnba1abnr/4k4/1c5c1/p1p1p1p1p/9/9/P1P1P1P1P/1C5C1/4K4/RNBA1ABNR[] w - - 0 1

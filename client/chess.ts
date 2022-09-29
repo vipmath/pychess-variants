@@ -274,6 +274,19 @@ export const VARIANTS: { [name: string]: Variant } = {
         pass: true,
         icon: "=",
     }),
+
+    racingkingsjanggi: new Variant({
+        name: "racingkingsjanggi", tooltip: () => _("Korean Chess, similar to Xiangqi but plays much differently. Tournament rules are used."),
+        startFen: "9/9/9/9/9/9/9/9/krnb1BNRK/crnc1CNRC w - - 0 1",
+        board: "janggi9x10", piece: "janggi",
+        firstColor: "Blue", secondColor: "Red",
+        pieceLetters: ["k", "c", "r", "b", "n"],
+        promoteableLetters: [],
+        timeControl: "byoyomi",
+        materialPoint: "janggi",
+        pass: true,
+        icon: "=",
+    }),
 	
     janggi: new Variant({
         name: "janggi", tooltip: () => _("Korean Chess, similar to Xiangqi but plays much differently. Tournament rules are used."),
@@ -831,7 +844,7 @@ const variantGroups: { [ key: string ]: { variants: string[] } } = {
     standard: { variants: [ "chess", "crazyhouse", "placement", "atomic" ] },
     sea:      { variants: [ "makruk", "makpong", "cambodian", "sittuyin", "asean" ] },
     shogi:    { variants: [ "shogi", "minishogi", "kyotoshogi", "dobutsu", "gorogoroplus", "torishogi" ] },
-    xiangqi:  { variants: [ "xiangqi", "manchu", "janggi", "changgi", "coffeejanggi", "janggihouse", "minixiangqi" ] },
+    xiangqi:  { variants: [ "xiangqi", "manchu", "janggi", "changgi", "racingkingsjanggi" , "coffeejanggi", "janggihouse", "minixiangqi" ] },
     fairy:    { variants: [ "capablanca", "capahouse", "seirawan", "shouse", "grand", "grandhouse", "shako", "shogun", "hoppelpoppel" ] },
     army:     { variants: [ "orda", "synochess", "shinobi", "empire", "ordamirror", "chak", "chennis" ] },
 };
@@ -1128,7 +1141,8 @@ export function notation(variant: Variant): cg.Notation {
 
     switch (variant.name) {
         case 'janggi':
-        case 'changgi':		
+        case 'changgi':
+        case 'racingkingsjanggi':		
         case 'coffeejanggi':		
         case 'janggihouse':		
             cgNotation = cg.Notation.JANGGI;
