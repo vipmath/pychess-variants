@@ -308,6 +308,24 @@ export const VARIANTS: { [name: string]: Variant } = {
         firstColor: "Blue", secondColor: "Red",
         pieceLetters: ["k", "c", "r", "n", "p"],
         promoteableLetters: [],
+        timeControl: "byoyomi",
+        materialPoint: "janggi",
+        pass: true,			
+        icon: "7",
+    }),
+
+    minijanggihouse: new Variant({
+        name: "minijanggihouse", tooltip: () => _("Compact version of Janggi played on a 7x7 board without a river."),
+        startFen: "rcnkncr/p1ppp1p/7/7/7/P1PPP1P/RCNKNCR[] w - - 0 1",
+        board: "xiangqi7x7", piece: "janggi",
+        firstColor: "Blue", secondColor: "Red",
+        pieceLetters: ["k", "c", "r", "n", "p"],
+        pocketLetters: ["c", "r","n", "p"],		
+        promoteableLetters: [],
+        timeControl: "byoyomi",
+        materialPoint: "janggi",
+        captureToHand: true,		
+        pass: true,			
         icon: "7",
     }),
 	
@@ -851,7 +869,7 @@ const disabledVariants = [ "gothic", "gothhouse", "embassy", "gorogoro" ];
 export const enabledVariants = variants.filter(v => !disabledVariants.includes(v));
 
 const variantGroups: { [ key: string ]: { variants: string[] } } = {
-    xiangqi:  { variants: ["janggi", "minijanggi", "changgi", "racingkingsjanggi" , "coffeejanggi", "janggihouse", "minixiangqi" , "xiangqi", "manchu"] },
+    xiangqi:  { variants: ["janggi", "minijanggi", "minijanggihouse", "changgi", "racingkingsjanggi" , "coffeejanggi", "janggihouse", "minixiangqi" , "xiangqi", "manchu"] },
     standard: { variants: [ "chess", "crazyhouse", "placement", "atomic" ] },
     sea:      { variants: [ "makruk", "makpong", "cambodian", "sittuyin", "asean" ] },
     shogi:    { variants: [ "shogi", "minishogi", "kyotoshogi", "dobutsu", "gorogoroplus", "torishogi" ] },
@@ -1151,7 +1169,8 @@ export function notation(variant: Variant): cg.Notation {
 
     switch (variant.name) {
         case 'janggi':
-        case 'minijanggi':		
+        case 'minijanggi':	
+        case 'minijanggihouse':		
         case 'changgi':
         case 'racingkingsjanggi':		
         case 'coffeejanggi':		
