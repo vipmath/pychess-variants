@@ -361,7 +361,7 @@ export const VARIANTS: { [name: string]: Variant } = {
 
     check3janggi: new Variant({
         name: "check3janggi", tooltip: () => _("Korean Chess, similar to Xiangqi but plays much differently."),
-        startFen: "rnba1abnr/4k4/1c5c1/p1p1p1p1p/9/9/P1P1P1P1P/1C5C1/4K4/RNBA1ABNR w - 3+3 0 1",
+        startFen: "rnba1abnr/4k4/1c5c1/p1p1p1p1p/9/9/P1P1P1P1P/1C5C1/4K4/RNBA1ABNR w - - 3+3 0 1",
         board: "janggi9x10", piece: "janggi",
         firstColor: "Blue", secondColor: "Red",
         pieceLetters: ["k", "a", "c", "r", "b", "n", "p"],
@@ -401,7 +401,7 @@ export const VARIANTS: { [name: string]: Variant } = {
     }),
 
     janggihouse: new Variant({
-        name: "janggihouse", tooltip: () => _("Korean Chess, similar to Xiangqi but plays much differently. Tournament rules are used."),
+        name: "janggihouse", displayName: "미친장기", tooltip: () => _("Korean Chess, similar to Xiangqi but plays much differently. Tournament rules are used."),
         startFen: "rnba1abnr/4k4/1c5c1/p1p1p1p1p/9/9/P1P1P1P1P/1C5C1/4K4/RNBA1ABNR[] w - - 0 1",
         board: "janggi9x10", piece: "janggi",
         firstColor: "Blue", secondColor: "Red",
