@@ -35,6 +35,21 @@ blackFlag = *10
 flagMove = true
 checking = false
 
+[minijanggi:minixiangqi]
+startFen = rcnkncr/p1ppp1p/7/7/7/P1PPP1P/RCNKNCR w - - 0 1
+maxRank = 7
+maxFile = 7
+cannon = -
+janggiCannon = c
+flyingGeneral = false
+bikjangRule = false
+materialCounting = janggi
+pass = true
+moveRepetitionIllegal = true 
+nFoldRule = 4
+nMoveRule = 100
+diagonalLines = c1 e1 d2 c3 e3 c5 e5 d6 c7 e7
+
 # Hybrid variant of janggi and crazyhouse
 [janggihouse:janggimodern]
 startFen = rnba1abnr/4k4/1c5c1/p1p1p1p1p/9/9/P1P1P1P1P/1C5C1/4K4/RNBA1ABNR[] w - - 0 1

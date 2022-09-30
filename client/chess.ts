@@ -300,6 +300,16 @@ export const VARIANTS: { [name: string]: Variant } = {
         pass: true, setup: true,
         icon: "=",
     }),
+
+    minijanggi: new Variant({
+        name: "minijanggi", tooltip: () => _("Compact version of Janggi played on a 7x7 board without a river."),
+        startFen: "rcnkncr/p1ppp1p/7/7/7/P1PPP1P/RCNKNCR w - - 0 1",
+        board: "xiangqi7x7", piece: "janggi",
+        firstColor: "Blue", secondColor: "Red",
+        pieceLetters: ["k", "c", "r", "n", "p"],
+        promoteableLetters: [],
+        icon: "7",
+    }),
 	
     coffeejanggi: new Variant({
         name: "coffeejanggi", tooltip: () => _("Korean Chess, similar to Xiangqi but plays much differently. Tournament rules are used."),
@@ -841,20 +851,20 @@ const disabledVariants = [ "gothic", "gothhouse", "embassy", "gorogoro" ];
 export const enabledVariants = variants.filter(v => !disabledVariants.includes(v));
 
 const variantGroups: { [ key: string ]: { variants: string[] } } = {
+    xiangqi:  { variants: ["janggi", "minijanggi", "changgi", "racingkingsjanggi" , "coffeejanggi", "janggihouse", "minixiangqi" , "xiangqi", "manchu"] },
     standard: { variants: [ "chess", "crazyhouse", "placement", "atomic" ] },
     sea:      { variants: [ "makruk", "makpong", "cambodian", "sittuyin", "asean" ] },
     shogi:    { variants: [ "shogi", "minishogi", "kyotoshogi", "dobutsu", "gorogoroplus", "torishogi" ] },
-    xiangqi:  { variants: [ "xiangqi", "manchu", "janggi", "changgi", "racingkingsjanggi" , "coffeejanggi", "janggihouse", "minixiangqi" ] },
     fairy:    { variants: [ "capablanca", "capahouse", "seirawan", "shouse", "grand", "grandhouse", "shako", "shogun", "hoppelpoppel" ] },
     army:     { variants: [ "orda", "synochess", "shinobi", "empire", "ordamirror", "chak", "chennis" ] },
 };
 
 function variantGroupLabel(group: string): string {
     const groups: {[index: string]: string} = {
+        xiangqi: _("Xiangqi Variants"),	
         standard: _("Chess Variants"),
         sea: _("Makruk Variants"),
         shogi: _("Shogi Variants"),
-        xiangqi: _("Xiangqi Variants"),
         fairy: _("Fairy Piece Variants"),
         army: _("New Army Variants"),
     }
@@ -1141,6 +1151,7 @@ export function notation(variant: Variant): cg.Notation {
 
     switch (variant.name) {
         case 'janggi':
+        case 'minijanggi':		
         case 'changgi':
         case 'racingkingsjanggi':		
         case 'coffeejanggi':		
