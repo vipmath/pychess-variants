@@ -442,11 +442,59 @@ export const VARIANTS: { [name: string]: Variant } = {
             'PawnsPassed': "rnbqkbnr/8/8/PPPPPPPP/pppppppp/8/8/RNBQKBNR w KQkq - 0 1",
             'UpsideDown': "RNBKQBNR/PPPPPPPP/8/8/8/8/pppppppp/rnbkqbnr w - - 0 1",
             'Theban': "1p6/2p3kn/3p2pp/4pppp/5ppp/8/PPPPPPPP/PPPPPPKN w - - 0 1",
-            'No castle': 'rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w - - 0 1'
+             'No castle': 'rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w - - 0 1'
         },
         chess960: true, icon: "M", icon960: "V",
     }),
 
+    antichess: new Variant({
+      name: "antichess", tooltip: () => _("capture all pieces."),
+      startFen: "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w - - 0 1",
+      board: "standard8x8", piece: "standard",
+      pieceLetters: ["k", "q", "r", "b", "n", "p"],
+      promotionOrder: ["q", "n", "r", "b", "p", "k"],
+      enPassant: true,
+      chess960: true, icon: "♔", icon960: "♔",
+    }),
+	
+    kingofthehill: new Variant({
+        name: "kingofthehill", tooltip: () => _("Antichess + koth"),
+        startFen: "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+        board: "standard8x8", piece: "standard",
+        pieceLetters: ["k", "q", "r", "b", "n", "p"],
+        enPassant: true,
+        chess960: true, icon: "♔", icon960: "♔",
+    }),
+	
+	
+    coffeehill: new Variant({
+        name: "coffeehill", tooltip: () => _("Antichess + koth"),
+        startFen: "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+        board: "standard8x8", piece: "standard",
+        pieceLetters: ["k", "q", "r", "b", "n", "p"],
+        enPassant: true,
+        chess960: true, icon: "♔", icon960: "♔",
+    }),
+
+    racingkings: new Variant({
+            name: "racingkings", tooltip: () => _("AntiRacingkings."),
+            startFen: "8/8/8/8/8/8/krbnNBRK/qrbnNBRQ w - - 0 1",
+            board: "standard8x8", piece: "standard",
+            pieceLetters: ["k", "q", "r", "b", "n", "p"],
+            enPassant: true,
+            icon: "♔",
+        }), 	
+	
+	
+    coffeerace: new Variant({
+            name: "coffeerace", tooltip: () => _("AntiRacingkings."),
+            startFen: "8/8/8/8/8/8/krbnNBRK/qrbnNBRQ w - - 0 1",
+            board: "standard8x8", piece: "standard",
+            pieceLetters: ["k", "q", "r", "b", "n", "p"],
+            enPassant: true,
+            icon: "♔",
+        }), 
+	
     crazyhouse: new Variant({
         name: "crazyhouse", tooltip: () => _("Take captured pieces and drop them back on to the board as your own."),
         startFen: "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR[] w KQkq - 0 1",
@@ -465,6 +513,16 @@ export const VARIANTS: { [name: string]: Variant } = {
         chess960: true, icon: "+", icon960: "%",
     }),
 
+    coffeehouse: new Variant({
+      name: "coffeehouse", tooltip: () => _("antichess + crazyhouse."),
+      startFen: "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR[] w KQkq - 0 1",
+      board: "standard8x8", piece: "standard",
+      pieceLetters: ["k", "q", "r", "b", "n", "p"],
+      pocketLetters: ["p", "n", "b", "r", "q"],
+      enPassant: true, captureToHand: true,
+      chess960: true, icon: "+", icon960: "%",
+    }),	
+	
     placement: new Variant({
         name: "placement", tooltip: () => _("Choose where your pieces start."),
         startFen: "8/pppppppp/8/8/8/8/PPPPPPPP/8[KQRRBBNNkqrrbbnn] w - - 0 1",
