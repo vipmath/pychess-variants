@@ -81,6 +81,7 @@ CONSERVATIVE_CAPA_FEN = "arnbqkbnrc/pppppppppp/10/10/10/10/PPPPPPPPPP/ARNBQKBNRC
 
 VARIANTS = (
     "chess",
+    "antichess",    
     "chess960",
     "crazyhouse",
     "crazyhouse960",
@@ -160,6 +161,7 @@ VARIANT_ICONS = {
     "janggihouse": "=",    
     "xiangqi": "|",
     "chess": "M",
+    "antichess": "M",    
     "crazyhouse": "+",
     "placement": "S",
     "capablanca": "P",
@@ -202,6 +204,7 @@ VARIANT_ICONS = {
 
 VARIANT_960_TO_PGN = {
     "chess": "Chess960",
+    "antichess": "Chess960",    
     "capablanca": "Caparandom",
     "capahouse": "Capahouse960",
     "crazyhouse": "Crazyhouse",  # to let lichess import work
@@ -316,6 +319,7 @@ TRANSLATED_FREQUENCY_NAMES = {
 
 TRANSLATED_VARIANT_NAMES = {
     "chess": _("Chess"),
+    "antichess": _("Antichess"),    
     "chess960": _("Chess960"),
     "crazyhouse": _("Crazyhouse"),
     "crazyhouse960": _("Crazyhouse960"),

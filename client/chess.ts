@@ -447,6 +447,16 @@ export const VARIANTS: { [name: string]: Variant } = {
         chess960: true, icon: "M", icon960: "V",
     }),
 
+    antichess: new Variant({
+        name: "antichess", tooltip: () => _("capture all pieces."),
+        startFen: "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w - - 0 1",
+        board: "standard8x8", piece: "standard",
+        pieceLetters: ["k", "q", "r", "b", "n", "p"],
+        promotionOrder: ["q", "n", "r", "b", "p", "k"],
+        enPassant: true,
+        chess960: true, icon: "♔", icon960: "♔",
+    }),
+
     crazyhouse: new Variant({
         name: "crazyhouse", tooltip: () => _("Take captured pieces and drop them back on to the board as your own."),
         startFen: "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR[] w KQkq - 0 1",
@@ -943,7 +953,7 @@ export const enabledVariants = variants.filter(v => !disabledVariants.includes(v
 
 const variantGroups: { [ key: string ]: { variants: string[] } } = {
     xiangqi:  { variants: ["janggi", "check3janggi", "check3janggihouse", "atomicjanggi", "atomicjanggihouse", "minijanggi", "minijanggihouse", "changgi", "racingkingsjanggi" , "coffeejanggi", "coffeejanggihouse", "janggihouse", "minixiangqi" , "xiangqi", "manchu"] },
-    standard: { variants: [ "chess", "crazyhouse", "placement", "atomic" ] },
+    standard: { variants: [ "chess", "antichess", "crazyhouse", "placement", "atomic" ] },
     sea:      { variants: [ "makruk", "makpong", "cambodian", "sittuyin", "asean" ] },
     shogi:    { variants: [ "shogi", "minishogi", "kyotoshogi", "dobutsu", "gorogoroplus", "torishogi" ] },
     fairy:    { variants: [ "capablanca", "capahouse", "seirawan", "shouse", "grand", "grandhouse", "shako", "shogun", "hoppelpoppel" ] },
