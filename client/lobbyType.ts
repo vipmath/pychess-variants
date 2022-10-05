@@ -1,3 +1,5 @@
+import * as cg from 'chessgroundx/types';
+
 export interface Stream {
     site: string;
     title: string;
@@ -9,7 +11,7 @@ export interface Spotlight {
     variant: string;
     chess960: boolean;
     nbPlayers: number;
-    name: string;
+    names: {[key: string]: string};
     startsAt: string;
     tid: string;
 }
@@ -83,6 +85,23 @@ export interface Seek {
 
     target: string;
     title: string;
+}
+
+export interface TvGame {
+    gameId: string;
+    variant: string;
+    fen: cg.FEN;
+    wt: string;
+    bt: string;
+    w: string;
+    b: string;
+    wr: string;
+    br: string;
+    chess960: boolean;
+    base: number;
+    inc: number;
+    byoyomi: number;
+    lastMove: string;
 }
 
 export type CreateMode = 'createGame' | 'playFriend' | 'playAI' | 'createHost';

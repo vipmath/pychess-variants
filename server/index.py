@@ -59,6 +59,7 @@ from tournaments import (
 from puzzle import (
     get_puzzle,
     next_puzzle,
+    get_daily_puzzle,
 )
 from custom_trophy_owners import CUSTOM_TROPHY_OWNERS
 
@@ -393,7 +394,11 @@ async def index(request):
         "tournamentdirector": user.username in TOURNAMENT_DIRECTORS,
     }
 
-    if view in ("profile", "level8win"):
+    if view == "lobby":
+        puzzle = await get_daily_puzzle(request)
+        render["puzzle"] = json.dumps(puzzle)
+
+    elif view in ("profile", "level8win"):
         if view == "level8win":
             profileId = "Fairy-Stockfish"
             render["trophies"] = []
@@ -477,33 +482,33 @@ async def index(request):
         render["icons"] = VARIANT_ICONS
         render["pairing_system_name"] = pairing_system_name
         render["time_control_str"] = time_control_str
-        render["tables"] = await get_latest_tournaments(request.app, lang_translation)
+        render["tables"] = await get_latest_tournaments(request.app, lang)
         render["admin"] = user.username in ADMINS
 
     elif view == "puzzle":
-        puzzleId = request.match_info.get("puzzleId")
-
-        if puzzleId in VARIANTS:
-            user.puzzle_variant = puzzleId
-            puzzleId = None
-        elif variant in VARIANTS:
-            user.puzzle_variant = variant
+        if request.path.endswith("/daily"):
+            puzzle = await get_daily_puzzle(request)
         else:
-            user.puzzle_variant = None
+            puzzleId = request.match_info.get("puzzleId")
 
-        if puzzleId is None:
-            # TODO: select random variant for daily puzzles
-            puzzle = await next_puzzle(request, user)
-        else:
-            puzzle = await get_puzzle(request, puzzleId)
+            if puzzleId in VARIANTS:
+                user.puzzle_variant = puzzleId
+                puzzleId = None
+            elif variant in VARIANTS:
+                user.puzzle_variant = variant
+            else:
+                user.puzzle_variant = None
+
+            if puzzleId is None:
+                # TODO: select random variant for daily puzzles
+                puzzle = await next_puzzle(request, user)
+            else:
+                puzzle = await get_puzzle(request, puzzleId)
 
         render["view_css"] = "analysis.css"
         render["variant"] = puzzle["variant"]
         render["fen"] = puzzle["fen"]
         render["puzzle"] = json.dumps(puzzle)
-        print("---- PUZZLE ---")
-        print(render)
-        print("---------------")
 
     if (gameId is not None) and gameId != "variants":
         if view == "invite":
