@@ -11,7 +11,8 @@ https://lichess.org/blog/Wqa7GiAAAOIpBLoY/developer-update-275-improved-game-com
 V2C = {
     "chess": "n",
     "antichess": "n0",    
-    "kingofthehill": "n1",      
+    "kingofthehill": "n1", 
+    "racingkings": "n2",
     "capablanca": "c",
     "capahouse": "i",
     "crazyhouse": "h",

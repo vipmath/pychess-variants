@@ -466,6 +466,33 @@ export const VARIANTS: { [name: string]: Variant } = {
         chess960: true, icon: "♔", icon960: "♔",
     }),
 
+    coffeehill: new Variant({
+        name: "coffeehill", tooltip: () => _("Antichess + koth"),
+        startFen: "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+        board: "standard8x8", piece: "standard",
+        pieceLetters: ["k", "q", "r", "b", "n", "p"],
+        enPassant: true,
+        chess960: true, icon: "♔", icon960: "♔",
+    }),
+
+    racingkings: new Variant({
+        name: "racingkings", tooltip: () => _("AntiRacingkings."),
+        startFen: "8/8/8/8/8/8/krbnNBRK/qrbnNBRQ w - - 0 1",
+        board: "standard8x8", piece: "standard",
+        pieceLetters: ["k", "q", "r", "b", "n", "p"],
+        enPassant: true,
+        icon: "♔",
+    }), 
+
+    coffeerace: new Variant({
+        name: "coffeerace", tooltip: () => _("AntiRacingkings."),
+        startFen: "8/8/8/8/8/8/krbnNBRK/qrbnNBRQ w - - 0 1",
+        board: "standard8x8", piece: "standard",
+        pieceLetters: ["k", "q", "r", "b", "n", "p"],
+        enPassant: true,
+        icon: "♔",
+    }), 
+
     crazyhouse: new Variant({
         name: "crazyhouse", tooltip: () => _("Take captured pieces and drop them back on to the board as your own."),
         startFen: "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR[] w KQkq - 0 1",
@@ -483,6 +510,16 @@ export const VARIANTS: { [name: string]: Variant } = {
         },
         chess960: true, icon: "+", icon960: "%",
     }),
+
+    coffeehouse: new Variant({
+        name: "coffeehouse", tooltip: () => _("antichess + crazyhouse."),
+        startFen: "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR[] w KQkq - 0 1",
+        board: "standard8x8", piece: "standard",
+        pieceLetters: ["k", "q", "r", "b", "n", "p"],
+        pocketLetters: ["p", "n", "b", "r", "q"],
+        enPassant: true, captureToHand: true,
+        chess960: true, icon: "+", icon960: "%",
+    }),	
 
     placement: new Variant({
         name: "placement", tooltip: () => _("Choose where your pieces start."),
@@ -962,7 +999,7 @@ export const enabledVariants = variants.filter(v => !disabledVariants.includes(v
 
 const variantGroups: { [ key: string ]: { variants: string[] } } = {
     xiangqi:  { variants: ["janggi", "check3janggi", "check3janggihouse", "atomicjanggi", "atomicjanggihouse", "minijanggi", "minijanggihouse", "changgi", "racingkingsjanggi" , "coffeejanggi", "coffeejanggihouse", "janggihouse", "minixiangqi" , "xiangqi", "manchu"] },
-    standard: { variants: [ "chess", "antichess", "kingofthehill", "crazyhouse", "placement", "atomic" ] },
+    standard: { variants: [ "chess", "antichess", "kingofthehill", "racingkings", "crazyhouse", "placement", "atomic" ] },
     sea:      { variants: [ "makruk", "makpong", "cambodian", "sittuyin", "asean" ] },
     shogi:    { variants: [ "shogi", "minishogi", "kyotoshogi", "dobutsu", "gorogoroplus", "torishogi" ] },
     fairy:    { variants: [ "capablanca", "capahouse", "seirawan", "shouse", "grand", "grandhouse", "shako", "shogun", "hoppelpoppel" ] },
