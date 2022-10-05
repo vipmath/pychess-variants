@@ -83,6 +83,7 @@ VARIANTS = (
     "chess",
     "antichess",    
     "chess960",
+    "kingofthehill",
     "crazyhouse",
     "crazyhouse960",
     "placement",
@@ -161,7 +162,8 @@ VARIANT_ICONS = {
     "janggihouse": "=",    
     "xiangqi": "|",
     "chess": "M",
-    "antichess": "M",    
+    "antichess": "M",
+    "kingofthehill": "M",
     "crazyhouse": "+",
     "placement": "S",
     "capablanca": "P",
@@ -204,7 +206,7 @@ VARIANT_ICONS = {
 
 VARIANT_960_TO_PGN = {
     "chess": "Chess960",
-    "antichess": "Chess960",    
+    "antichess": "Antichess960",    
     "capablanca": "Caparandom",
     "capahouse": "Capahouse960",
     "crazyhouse": "Crazyhouse",  # to let lichess import work
@@ -319,7 +321,9 @@ TRANSLATED_FREQUENCY_NAMES = {
 
 TRANSLATED_VARIANT_NAMES = {
     "chess": _("Chess"),
-    "antichess": _("Antichess"),    
+    "antichess": _("Antichess"),  
+    "antichess960": _("Antichess960"),  
+    "kingofthehill": _("Kingofthehill"),       
     "chess960": _("Chess960"),
     "crazyhouse": _("Crazyhouse"),
     "crazyhouse960": _("Crazyhouse960"),
