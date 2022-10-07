@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="100"
+   height="100"
+   viewBox="0 0 100 100"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   sodipodi:docname="bS.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="px"
+     showgrid="false"
+     inkscape:zoom="2.5420489"
+     inkscape:cx="73.7594"
+     inkscape:cy="28.913685"
+     inkscape:window-width="1332"
+     inkscape:window-height="1011"
+     inkscape:window-x="2492"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer1"
+     inkscape:label="레이어 1">
+    <g
+       id="g1271"
+       transform="matrix(1,0,0,-1,0,100)">
+      <rect
+         style="fill:#ffffff;stroke:#ffffff;stroke-width:5.228;stroke-linejoin:round;paint-order:markers stroke fill"
+         id="rect1182"
+         width="94.772003"
+         height="94.772003"
+         x="2.6139996"
+         y="2.6139996" />
+      <rect
+         style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-linejoin:round;paint-order:markers stroke fill"
+         id="rect1398"
+         width="94"
+         height="94"
+         x="3"
+         y="3" />
+      <rect
+         style="fill:#ffffff;fill-opacity:1;stroke-width:0;stroke-linejoin:round;paint-order:markers stroke fill"
+         id="rect1555"
+         width="88"
+         height="88"
+         x="6"
+         y="6" />
+      <rect
+         style="fill:#8ec3d3;fill-opacity:1;stroke-width:0;stroke-linejoin:round;paint-order:markers stroke fill"
+         id="rect1366-1"
+         width="86"
+         height="43"
+         x="7"
+         y="-93"
+         transform="scale(1,-1)" />
+      <rect
+         style="fill:#ffffff;fill-opacity:1;stroke-width:0;stroke-linejoin:round;paint-order:markers stroke fill"
+         id="rect17580"
+         width="52"
+         height="27"
+         x="24"
+         y="49" />
+      <rect
+         style="fill:#202020;fill-opacity:1;stroke-width:0;stroke-linejoin:round;paint-order:markers stroke fill"
+         id="rect4874-9-6-4"
+         width="48"
+         height="48"
+         x="26"
+         y="26" />
+    </g>
+  </g>
+</svg>

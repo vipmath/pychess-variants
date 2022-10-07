@@ -53,6 +53,7 @@ export const BOARD_FAMILIES: { [key: string]: BoardFamily } = {
     shogun8x8: { dimensions: { width: 8, height: 8 }, cg: "cg-512", boardCSS: ["ShogunPlain.svg", "ShogunMaple.png", "ShogunMaple2.png", "ShogunBlue.svg", "8x8brown.svg", "8x8maple.jpg"] },
     chak9x9:{ dimensions: { width: 9, height: 9 }, cg: "cg-540", boardCSS: ["StandardChakBoard.svg", "ColoredChakBoard.svg", "ChakArt.jpg"] },
     chennis7x7:{ dimensions: { width: 7, height: 7 }, cg: "cg-448", boardCSS: ["WimbledonBoard.svg", "FrenchOpenBoard.svg", "USOpenBoard.svg"] },
+	pandemonium9x9: { geometry: cg.Geometry.dim9x9, cg: "cg-540", boardCSS: ["9x9pandemonium.svg", "ShogiBlueTexture1.svg", "ShogiCheckeredWood1.svg", "ShogiGrayTexture1.svg", "ShogiGreenTexture1.svg", "ShogiMaple1.svg", "ShogiRedTexture1.svg", "ShogiSpace11.svg"] },	
 };
 
 export const PIECE_FAMILIES: { [key: string]: PieceFamily } = {
@@ -78,6 +79,7 @@ export const PIECE_FAMILIES: { [key: string]: PieceFamily } = {
     ordamirror: { pieceCSS: ["ordamirror0", "ordamirror1"] },
     chak: { pieceCSS: ["chak0"] },
     chennis: { pieceCSS: ["chennis0", "chennis1", "chennis2"] },
+	pandemonium: { pieceCSS: ["pandemonium0", "pandemonium1", "pandemonium2"] },  	
 };
 
 type MandatoryPromotionPredicate = (role: cg.Role, orig: cg.Orig, dest: cg.Key, color: cg.Color) => boolean;
@@ -261,6 +263,18 @@ interface VariantConfig {
 }
 
 export const VARIANTS: { [name: string]: Variant } = {
+
+    pandemonium: new Variant({
+        name: "pandemonium", tooltip: () => _("https://www.chessvariants.com/rules/pandemonium"),
+        startFen: "rnbsksbnr/2+f1+u1+a2/p1p1p1p1p/4v4/9/4V4/P1P1P1P1P/2+F1+U1+A2/RNBSKSBNR[] w - - 0 1",
+        board: "pandemonium9x9", piece: "pandemonium",
+        firstColor: "White", secondColor: "Black",
+        pieceRoles: ["k", "+f", "r", "n", "b", "p", "+n", "s", "u", "+p", "+b", "+r", "a", "+a", "+v", "f", "v", "+u"],
+        pocketRoles: ["p", "n", "b", "r", "a", "v", "f", "s", "u"],
+        promotion: "shogi",
+        captureToHand: true,
+        icon: "F",
+    }),	
 
     changgi: new Variant({
         name: "changgi", tooltip: () => _("Korean Chess, similar to Xiangqi but plays much differently. Tournament rules are used."),
@@ -1002,7 +1016,7 @@ const variantGroups: { [ key: string ]: { variants: string[] } } = {
     standard: { variants: [ "chess", "antichess", "kingofthehill", "racingkings", "crazyhouse", "placement", "atomic" ] },
     sea:      { variants: [ "makruk", "makpong", "cambodian", "sittuyin", "asean" ] },
     shogi:    { variants: [ "shogi", "minishogi", "kyotoshogi", "dobutsu", "gorogoroplus", "torishogi" ] },
-    fairy:    { variants: [ "capablanca", "capahouse", "seirawan", "shouse", "grand", "grandhouse", "shako", "shogun", "hoppelpoppel" ] },
+    fairy:    { variants: [ "pandemonium", "capablanca", "capahouse", "seirawan", "shouse", "grand", "grandhouse", "shako", "shogun", "hoppelpoppel" ] },
     army:     { variants: [ "orda", "synochess", "shinobi", "empire", "ordamirror", "chak", "chennis" ] },
 };
 
@@ -1077,6 +1091,8 @@ export function validFen(variant: Variant, fen: string): boolean {
     const startfen = variant.startFen;
     const start = startfen.split(' ');
     const parts = fen.split(' ');
+
+    if (variantName === 'pandemonium') return true;
 
     // Need starting color
     if (parts.length < 2) return false;

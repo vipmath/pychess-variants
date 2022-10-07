@@ -48,4 +48,7 @@
 }
 .chennis7x7 cg-board {
     background-image: url('images/board/chennis.png');
+}	
+.pandemonium9x9 cg-board {
+    background-image: url('images/board/9x9pandemonium.svg');	
 }

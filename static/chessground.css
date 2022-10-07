@@ -18,6 +18,13 @@
 .cg-wrap.cg-640.mini {
   width: 320px;
 }
+/* 9x9 pandemonium */
+.cg-wrap.cg-540 {
+    padding-bottom: 100%;
+}
+.cg-wrap.cg-540.mini {
+  width: 270px;
+}
 /* 9x9 */
 .cg-wrap.cg-576 {
     padding-bottom: calc(1200 * 100% / 1100);
@@ -156,6 +163,11 @@ cg-board square {
   width: 10%;
   height: 10%;
 }
+/* 9x9 pandemonium */
+.cg-540 cg-board square{
+  width: 11.11%;
+  height: 11.11%;
+}
 /* 9x9 chak */
 .cg-540 cg-board square{
   width: 11.11%;
@@ -246,6 +258,11 @@ cg-board square.current-premove {
   width: 10%;
   height: 10%;
 }
+/* 9x9 pandemonium */
+.cg-wrap.cg-540 piece{
+  width: 11.11%;
+  height: 11.11%;
+}  
 .cg-wrap.cg-540 piece{
   width: 11.11%;
   height: 11.11%;
