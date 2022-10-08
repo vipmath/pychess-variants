@@ -210,7 +210,7 @@ VARIANT_ICONS = {
 
 VARIANT_960_TO_PGN = {
     "chess": "Chess960",
-    "antichess": "Antichess960",    
+    #"antichess": "Antichess960",    
     "capablanca": "Caparandom",
     "capahouse": "Capahouse960",
     "crazyhouse": "Crazyhouse",  # to let lichess import work
@@ -326,7 +326,7 @@ TRANSLATED_FREQUENCY_NAMES = {
 TRANSLATED_VARIANT_NAMES = {
     "chess": _("Chess"),
     "antichess": _("Antichess"),  
-    "antichess960": _("Antichess960"),  
+    #"antichess960": _("Antichess960"),  
     "kingofthehill": _("Kingofthehill"), 
     "racingkings": _("Racingkings"),  
     "chess960": _("Chess960"),
