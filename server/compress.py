@@ -58,7 +58,7 @@ V2C = {
     "empire": "P",
     "ordamirror": "O",
     "torishogi": "T",
-    "pandemonium": "f1",    
+    "pandemonium": "U",    
     "asean": "S",
     "chak": "C",
     "chennis": "H",
