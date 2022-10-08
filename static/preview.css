@@ -347,3 +347,12 @@ label.piece.piece1.chennis {
 label.piece.piece2.chennis {
     background-image: url('images/pieces/shogun/merida/mono/wC.svg');
 }
+label.piece.piece0.pandemonium {
+    background-image: url('images/pieces/merida/wK.svg');
+}
+label.piece.piece1.pandemonium {
+    background-image: url('images/pieces/Pandemonium/wK.svg');
+}
+label.piece.piece2.pandemonium {
+    background-image: url('images/pieces/Pandemonium/chessboi/wK.png');
+}
