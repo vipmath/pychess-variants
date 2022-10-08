@@ -53,8 +53,7 @@ export const BOARD_FAMILIES: { [key: string]: BoardFamily } = {
     shogun8x8: { dimensions: { width: 8, height: 8 }, cg: "cg-512", boardCSS: ["ShogunPlain.svg", "ShogunMaple.png", "ShogunMaple2.png", "ShogunBlue.svg", "8x8brown.svg", "8x8maple.jpg"] },
     chak9x9:{ dimensions: { width: 9, height: 9 }, cg: "cg-540", boardCSS: ["StandardChakBoard.svg", "ColoredChakBoard.svg", "ChakArt.jpg"] },
     chennis7x7:{ dimensions: { width: 7, height: 7 }, cg: "cg-448", boardCSS: ["WimbledonBoard.svg", "FrenchOpenBoard.svg", "USOpenBoard.svg"] },
-    //pandemonium9x9: { dimensions: { width: 9, height: 9 }, cg: "cg-540", boardCSS: ["9x9pandemonium.svg", "ShogiBlueTexture1.svg", "ShogiCheckeredWood1.svg", "ShogiGrayTexture1.svg", "ShogiGreenTexture1.svg", "ShogiMaple1.svg", "ShogiRedTexture1.svg", "ShogiSpace11.svg"] },
-    pandemonium9x9: { dimensions: { width: 9, height: 9 }, cg: "cg-540", boardCSS: ["9x9pandemonium.svg"] },		
+    pandemonium9x9: { dimensions: { width: 9, height: 9 }, cg: "cg-540", boardCSS: ["9x9pandemonium.svg", "ShogiBlueTexture1.svg", "ShogiCheckeredWood1.svg", "ShogiGrayTexture1.svg", "ShogiGreenTexture1.svg", "ShogiMaple1.svg", "ShogiRedTexture1.svg", "ShogiSpace11.svg"] },
 };
 
 export const PIECE_FAMILIES: { [key: string]: PieceFamily } = {
@@ -80,8 +79,7 @@ export const PIECE_FAMILIES: { [key: string]: PieceFamily } = {
     ordamirror: { pieceCSS: ["ordamirror0", "ordamirror1"] },
     chak: { pieceCSS: ["chak0"] },
     chennis: { pieceCSS: ["chennis0", "chennis1", "chennis2"] },
-    //pandemonium: { pieceCSS: ["pandemonium0", "pandemonium1", "pandemonium2"] }, 
-    pandemonium: { pieceCSS: ["pandemonium0"] }, 	
+    pandemonium: { pieceCSS: ["pandemonium0", "pandemonium1", "pandemonium2"] },  	
 };
 
 type MandatoryPromotionPredicate = (role: cg.Role, orig: cg.Orig, dest: cg.Key, color: cg.Color) => boolean;
