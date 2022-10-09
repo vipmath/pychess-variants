@@ -51,8 +51,8 @@ export const BOARD_FAMILIES: { [key: string]: BoardFamily } = {
     xiangqi7x7: { dimensions: { width: 7, height: 7 }, cg: "cg-448", boardCSS: ["minixiangqi.svg", "minixiangqiw.png", "minixqlg.svg"] },
     janggi9x10: { dimensions: { width: 9, height: 10 }, cg: "cg-576-640", boardCSS: ["JanggiBrown.svg", "JanggiPaper.png", "JanggiWood.png", "JanggiDark.svg", "JanggiWoodDark.svg", "JanggiStone.svg"] },
     shogun8x8: { dimensions: { width: 8, height: 8 }, cg: "cg-512", boardCSS: ["ShogunPlain.svg", "ShogunMaple.png", "ShogunMaple2.png", "ShogunBlue.svg", "8x8brown.svg", "8x8maple.jpg"] },
-    chak9x9:{ dimensions: { width: 9, height: 9 }, cg: "cg-540", boardCSS: ["StandardChakBoard.svg", "ColoredChakBoard.svg", "ChakArt.jpg"] },
-    chennis7x7:{ dimensions: { width: 7, height: 7 }, cg: "cg-448", boardCSS: ["WimbledonBoard.svg", "FrenchOpenBoard.svg", "USOpenBoard.svg"] },
+    chak9x9: { dimensions: { width: 9, height: 9 }, cg: "cg-540", boardCSS: ["StandardChakBoard.svg", "ColoredChakBoard.svg", "ChakArt.jpg"] },
+    chennis7x7: { dimensions: { width: 7, height: 7 }, cg: "cg-448", boardCSS: ["WimbledonBoard.svg", "FrenchOpenBoard.svg", "USOpenBoard.svg"] },
     pandemonium9x9: { dimensions: { width: 9, height: 9 }, cg: "cg-540", boardCSS: ["9x9pandemonium.svg", "ShogiBlueTexture1.svg", "ShogiCheckeredWood1.svg", "ShogiGrayTexture1.svg", "ShogiGreenTexture1.svg", "ShogiMaple1.svg", "ShogiRedTexture1.svg", "ShogiSpace11.svg"] },
 };
 
@@ -79,7 +79,8 @@ export const PIECE_FAMILIES: { [key: string]: PieceFamily } = {
     ordamirror: { pieceCSS: ["ordamirror0", "ordamirror1"] },
     chak: { pieceCSS: ["chak0"] },
     chennis: { pieceCSS: ["chennis0", "chennis1", "chennis2"] },
-    pandemonium: { pieceCSS: ["pandemonium0", "pandemonium1", "pandemonium2"] },  	
+    pandemonium: { pieceCSS: ["pandemonium0", "pandemonium1", "pandemonium2"] }, 
+    parahouse: { pieceCSS: ["parahouse0"] }, 	
 };
 
 type MandatoryPromotionPredicate = (role: cg.Role, orig: cg.Orig, dest: cg.Key, color: cg.Color) => boolean;
@@ -269,8 +270,20 @@ export const VARIANTS: { [name: string]: Variant } = {
         startFen: "rnbsksbnr/2+f1+u1+a2/p1p1p1p1p/4v4/9/4V4/P1P1P1P1P/2+F1+U1+A2/RNBSKSBNR[] w - - 0 1",
         board: "pandemonium9x9", piece: "pandemonium",
         firstColor: "White", secondColor: "Black",
-        pieceLetters: ["k", "+f", "r", "n", "b", "p", "+n", "s", "u", "+p", "+b", "+r", "a", "+a", "+v", "f", "v", "+u"],
+        pieceLetters: ["k", "p", "+p", "n", "+n", "b", "+b", "r", "+r", "a", "+a", "v", "+v", "f", "+f","s","+s", "u", "+u"],
         pocketLetters: ["p", "n", "b", "r", "a", "v", "f", "s", "u"],
+        promotion: "shogi",
+        captureToHand: true,
+        icon: "F",
+    }),	
+
+    parahouse: new Variant({
+        name: "parahouse", tooltip: () => _("https://www.chessvariants.com/rules/pandemonium"),
+        startFen: "rnbdkhbnr/4q4/ppppppppp/9/9/9/PPPPPPPPP/4Q4/RNBHKDBNR[] w - - 0 1",
+        board: "pandemonium9x9", piece: "parahouse",
+        firstColor: "White", secondColor: "Black",
+        pieceLetters: ["k", "p", "+p", "n", "+n", "b", "+b", "r", "+r", "q", "+q", "h", "+h", "d", "+d"],
+        pocketLetters: ["p", "n", "b", "r", "q", "h", "d"],
         promotion: "shogi",
         captureToHand: true,
         icon: "F",
@@ -1016,7 +1029,7 @@ const variantGroups: { [ key: string ]: { variants: string[] } } = {
     standard: { variants: [ "chess", "antichess", "kingofthehill", "racingkings", "crazyhouse", "placement", "atomic" ] },
     sea:      { variants: [ "makruk", "makpong", "cambodian", "sittuyin", "asean" ] },
     shogi:    { variants: [ "shogi", "minishogi", "kyotoshogi", "dobutsu", "gorogoroplus", "torishogi" ] },
-    fairy:    { variants: [ "pandemonium", "capablanca", "capahouse", "seirawan", "shouse", "grand", "grandhouse", "shako", "shogun", "hoppelpoppel" ] },
+    fairy:    { variants: [ "pandemonium", "parahouse", "capablanca", "capahouse", "seirawan", "shouse", "grand", "grandhouse", "shako", "shogun", "hoppelpoppel" ] },
     army:     { variants: [ "orda", "synochess", "shinobi", "empire", "ordamirror", "chak", "chennis" ] },
 };
 

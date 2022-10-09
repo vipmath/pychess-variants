@@ -68,6 +68,44 @@ flagPiece = k
 whiteFlag = *9
 blackFlag = *1
 
+[parahouse]
+variantTemplate = shogi
+pieceToCharTable = PNBR.Q.HD..++++.+.++Kpnbr.q.hd..++++.+.++k
+maxFile = 9
+maxRank = 9
+pocketSize = 7
+startFen = rnbdkhbnr/4q4/ppppppppp/9/9/9/PPPPPPPPP/4Q4/RNBHKDBNR[] w - - 0 1
+customPiece1 = t:BNW
+cast = false
+capturesToHand = true
+pieceDrops = true
+dropNoDoubled = p
+immobilityIllegal = true
+shogiPawn = p
+knight = n
+bishop = b
+rook = r
+queen = q
+amazon = a
+aiwok = s
+dragonHorse = h
+bers = d
+king = k
+commoner = g
+centaur = j
+archbishop = c
+chancellor = m
+promotionRank = 7
+promotedPieceType = p:g n:j b:c r:m q:a h:t d:s
+doubleStep = false
+perpetualCheckIllegal = true
+nMoveRule = 0
+nFoldValue = loss
+stalemateValue = loss
+flagPiece = k
+whiteFlag = *9
+blackFlag = *1
+
 [atomicjanggi:changgi]
 startFen = rnba1abnr/4k4/1c5c1/p1p1p1p1p/9/9/P1P1P1P1P/1C5C1/4K4/RNBA1ABNR w - - 0 1
 king = -
