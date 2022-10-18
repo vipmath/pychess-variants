@@ -152,6 +152,14 @@ pieceDrops = true
 capturesToHand = false
 dropChecks = false
 
+[nudejanggihouse:janggimodern]
+startFen = 9/4k4/9/9/9/9/9/9/4K4/9[RRNNBBCCAAPPPPPrrnnbbccaappppp] w - - 0 1
+pieceDrops = true
+capturesToHand = true
+dropChecks = true
+whiteDropRegion = *1 *2 *3 *4 *5
+blackDropRegion = *6 *7 *8 *9 *10
+
 # Hybrid variant of Grand-chess and crazyhouse, using Grand-chess as a template
 [grandhouse:grand]
 startFen = r8r/1nbqkcabn1/pppppppppp/10/10/10/10/PPPPPPPPPP/1NBQKCABN1/R8R[] w - - 0 1
