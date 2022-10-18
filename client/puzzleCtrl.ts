@@ -72,8 +72,8 @@ export class PuzzleController extends AnalysisController {
 
         this.renderInfos();
 
-        // When we have no puzzle for a given variant just show start FEN
-        if (!this.solution[0]) {
+        // When we have no puzzle for a given variant just show start FEN with _id: '0'
+        if (this._id === '0') {
             this.puzzleComplete(false);
             return;
         }
@@ -201,6 +201,10 @@ export class PuzzleController extends AnalysisController {
     }
 
     notTheMove(san: string) {
+        // post only on first failed move
+        if (!this.failed) {
+            this.postSuccess(false);
+        }
         this.failed = true;
         this.playerEl = patch(this.playerEl,
             h('div.player', [
@@ -233,6 +237,13 @@ export class PuzzleController extends AnalysisController {
     }
 
     puzzleComplete(success: boolean) {
+        if (!this.failed && success) {
+            // completed without any failed move
+            this.postSuccess(true);
+        } else if (!success && this._id !== '0') {
+            // failed by viewing the solution
+            this.postSuccess(false);
+        }
         this.completed = true;
         const feedbackEl = document.querySelector('.feedback') as HTMLInputElement;
         patch(feedbackEl, 
@@ -264,5 +275,30 @@ export class PuzzleController extends AnalysisController {
             }
         }
         window.location.assign(loc);
+    }
+
+    postSuccess(success: boolean) {
+        const color = this.fullfen.split(" ")[1];
+        // TODO
+        const rated = true;
+
+        const XHR = new XMLHttpRequest();
+        const FD  = new FormData();
+        FD.append('win', `${success}`);
+        FD.append('variant', `${this.variant.name}`);
+        FD.append('color', color);
+        FD.append('rated', `${rated}`);
+
+        XHR.onreadystatechange = function() {
+            if (this.readyState === 4 && this.status === 200) {
+                const response = JSON.parse(this.responseText);
+                if (response['error'] !== undefined) {
+                    console.log(response['error']);
+                }
+            }
+        }
+        XHR.open("POST", `/puzzle/complete/${this._id}`, true);
+        XHR.send(FD);
+        console.log(FD);
     }
 }
