@@ -125,6 +125,12 @@ startFen = rnba1abnr/4k4/1c5c1/p1p1p1p1p/9/9/P1P1P1P1P/1C5C1/4K4/RNBA1ABNR[] w -
 pieceDrops = true
 capturesToHand = true
 
+[janggilhouse:janggimodern]
+startFen = rnba1abnr/4k4/1c5c1/p1p1p1p1p/9/9/P1P1P1P1P/1C5C1/4K4/RNBA1ABNR[] w - - 0 1
+pieceDrops = true
+capturesToHand = true
+dropChecks = false
+
 [check3janggi:janggimodern]
 startFen = rnba1abnr/4k4/1c5c1/p1p1p1p1p/9/9/P1P1P1P1P/1C5C1/4K4/RNBA1ABNR w - - 3+3 0 1
 checkCounting = true
