@@ -41,7 +41,7 @@ V2C = {
     "atomicjanggi": "j7",  
     "atomicjanggihouse": "j8",
     "nudejanggi": "j9",   
-    "nudejanggi": "j10",      
+    "nudejanggihouse": "j10",      
     "minijanggi": "j0", 
     "minijanggihouse": "j5",    
     "changgi": "j3", 
