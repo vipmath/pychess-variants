@@ -431,7 +431,7 @@ export const VARIANTS: { [name: string]: Variant } = {
 
     nudejanggi: new Variant({
         name: "nudejanggi", tooltip: () => _("Korean Chess, similar to Xiangqi but plays much differently. Tournament rules are used."),
-        startFen: "r9/4k4/9/9/9/9/9/9/4K4/9[RRNNBBCCAAPPPPPrrnnbbccaappppp] w - - 0 1",
+        startFen: "9/4k4/9/9/9/9/9/9/4K4/9[RRNNBBCCAAPPPPPrrnnbbccaappppp] w - - 0 1",
         board: "janggi9x10", piece: "janggi",
         firstColor: "Blue", secondColor: "Red",
         pieceLetters: ["k", "a", "c", "r", "b", "n", "p"],
