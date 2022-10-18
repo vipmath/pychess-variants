@@ -160,6 +160,12 @@ dropChecks = true
 whiteDropRegion = *1 *2 *3 *4 *5
 blackDropRegion = *6 *7 *8 *9 *10
 
+[pocketjanggi:janggimodern]
+startFen = 3a1a3/4k4/9/p1p1p1p1p/9/9/P1P1P1P1P/9/4K4/3A1A3[RRNNBBCCrrnnbbcc] w - - 0 1
+pieceDrops = true
+capturesToHand = false
+dropChecks = true
+
 # Hybrid variant of Grand-chess and crazyhouse, using Grand-chess as a template
 [grandhouse:grand]
 startFen = r8r/1nbqkcabn1/pppppppppp/10/10/10/10/PPPPPPPPPP/1NBQKCABN1/R8R[] w - - 0 1
