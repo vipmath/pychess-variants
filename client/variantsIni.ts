@@ -166,6 +166,12 @@ pieceDrops = true
 capturesToHand = false
 dropChecks = true
 
+[pocketjanggil:janggimodern]
+startFen = 3a1a3/4k4/9/p1p1p1p1p/9/9/P1P1P1P1P/9/4K4/3A1A3[RRNNBBCCrrnnbbcc] w - - 0 1
+pieceDrops = true
+capturesToHand = false
+dropChecks = false
+
 [pocketjanggihouse:janggimodern]
 startFen = 3a1a3/4k4/9/p1p1p1p1p/9/9/P1P1P1P1P/9/4K4/3A1A3[RRNNBBCCrrnnbbcc] w - - 0 1
 pieceDrops = true
