@@ -50,6 +50,7 @@ V2C = {
     "minijanggi": "j0", 
     "minijanggihouse": "j5",    
     "changgi": "j3", 
+    "centerjanggi": "j17",     
     "racingkingsjanggi": "j4",     
     "coffeejanggi": "j2",  
     "coffeejanggihouse": "j6",     
