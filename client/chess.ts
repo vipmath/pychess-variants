@@ -289,6 +289,19 @@ export const VARIANTS: { [name: string]: Variant } = {
         icon: "=",
     }),
 
+    chessjanggi: new Variant({
+        name: "chessjanggi", tooltip: () => _("Korean Chess, similar to Xiangqi but plays much differently. Tournament rules are used."),
+        startFen: "rnba1abnr/4k4/1c5c1/p1p1p1p1p/9/9/P1P1P1P1P/1C5C1/4K4/RNBA1ABNR w - - 0 1",
+        board: "janggi9x10", piece: "janggi",
+        firstColor: "Blue", secondColor: "Red",
+        pieceLetters: ["k", "a", "c", "r", "b", "n", "p"],
+        promoteableLetters: [],
+        timeControl: "byoyomi",
+        materialPoint: "janggi",
+        pass: true,
+        icon: "=",
+    }),
+
     centerjanggi: new Variant({
         name: "centerjanggi", tooltip: () => _("Korean Chess, similar to Xiangqi but plays much differently. Tournament rules are used."),
         startFen: "rnba1abnr/4k4/1c5c1/p1p1p1p1p/9/9/P1P1P1P1P/1C5C1/4K4/RNBA1ABNR w - - 0 1",
@@ -311,7 +324,7 @@ export const VARIANTS: { [name: string]: Variant } = {
         promoteableLetters: [],
         timeControl: "byoyomi",
         materialPoint: "janggi",
-        pass: true, setup: true,
+        pass: true,
         icon: "=",
     }),
 	
@@ -324,7 +337,7 @@ export const VARIANTS: { [name: string]: Variant } = {
         promoteableLetters: [],
         timeControl: "byoyomi",
         materialPoint: "janggi",
-        pass: true, setup: true,
+        pass: true,
         icon: "=",
     }),
 
@@ -337,7 +350,7 @@ export const VARIANTS: { [name: string]: Variant } = {
         promoteableLetters: [],
         timeControl: "byoyomi",
         materialPoint: "janggi",
-        pass: true, setup: true,
+        pass: true,
         icon: "=",
     }),	
 
@@ -1180,7 +1193,7 @@ const disabledVariants = [ "gothic", "gothhouse", "embassy", "gorogoro" ];
 export const enabledVariants = variants.filter(v => !disabledVariants.includes(v));
 
 const variantGroups: { [ key: string ]: { variants: string[] } } = {
-    xiangqi:  { variants: ["janggi", "hpjanggi", "nzjanggi", "nnjanggi", "centerjanggi",  "nudejanggi", "nudejanggihouse", "pocketjanggi", "pocketjanggil", "pocketjanggip", "pocketjanggihouse", "pocketjanggilhouse", "check3janggi", "check3janggihouse", "atomicjanggi", "atomicjanggihouse", "minijanggi", "minijanggihouse", "changgi", "racingkingsjanggi" , "coffeejanggi", "coffeejanggihouse", "janggihouse", "janggilhouse", "minixiangqi" , "xiangqi", "manchu"] },
+    xiangqi:  { variants: ["janggi", "hpjanggi", "nzjanggi", "nnjanggi", "chessjanggi",  "centerjanggi",  "nudejanggi", "nudejanggihouse", "pocketjanggi", "pocketjanggil", "pocketjanggip", "pocketjanggihouse", "pocketjanggilhouse", "check3janggi", "check3janggihouse", "atomicjanggi", "atomicjanggihouse", "minijanggi", "minijanggihouse", "changgi", "racingkingsjanggi" , "coffeejanggi", "coffeejanggihouse", "janggihouse", "janggilhouse", "minixiangqi" , "xiangqi", "manchu"] },
     standard: { variants: [ "chess", "antichess", "kingofthehill", "racingkings", "crazyhouse", "placement", "atomic" ] },
     sea:      { variants: [ "makruk", "makpong", "cambodian", "sittuyin", "asean" ] },
     shogi:    { variants: [ "shogi", "minishogi", "kyotoshogi", "dobutsu", "gorogoroplus", "torishogi" ] },
@@ -1485,6 +1498,7 @@ export function notation(variant: Variant): cg.Notation {
         case 'hpjanggi':
         case 'nzjanggi':
         case 'nnjanggi':		
+        case 'chessjanggi':
         case 'centerjanggi':		
         case 'nudejanggi':	
         case 'nudejanggihouse':
