@@ -52,6 +52,7 @@ V2C = {
     "changgi": "j3", 
     "centerjanggi": "j17",
     "racingjanggi": "j23", 
+    "allracingjanggi": "j25",     
     "janggimodern": "j24",    
     "chessjanggi": "j21",  
     "chessjanggihouse": "j22",     
