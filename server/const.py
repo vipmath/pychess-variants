@@ -75,7 +75,7 @@ LOSERS = {
     "flag": FLAG,
 }
 
-GRANDS = ("xiangqi", "manchu", "grand", "grandhouse", "shako", "janggi", "janggimodern", "racingjanggi", "allracingjanggi", "hpjanggi", "nzjanggi", "nnjanggi", "chessjanggi", "chessjanggihouse", "centerjanggi", "nudejanggi", "nudejanggihouse", "pocketjanggi", "pocketjanggil", "pocketjanggip", "pocketjanggihouse", "pocketjanggilhouse", "check3janggi", "check3janggihouse", "atomicjanggi", "atomicjanggihouse", "changgi", "racingkingsjanggi", "coffeejanggi", "coffeejanggihouse", "janggihouse", "janggilhouse")
+GRANDS = ("xiangqi", "manchu", "grand", "grandhouse", "shako", "janggi", "promojanggi", "janggimodern", "racingjanggi", "allracingjanggi", "hpjanggi", "nzjanggi", "nnjanggi", "chessjanggi", "chessjanggihouse", "centerjanggi", "nudejanggi", "nudejanggihouse", "pocketjanggi", "pocketjanggil", "pocketjanggip", "pocketjanggihouse", "pocketjanggilhouse", "check3janggi", "check3janggihouse", "atomicjanggi", "atomicjanggihouse", "changgi", "racingkingsjanggi", "coffeejanggi", "coffeejanggihouse", "janggihouse", "janggilhouse")
 
 CONSERVATIVE_CAPA_FEN = "arnbqkbnrc/pppppppppp/10/10/10/10/PPPPPPPPPP/ARNBQKBNRC w KQkq - 0 1"
 
@@ -106,6 +106,7 @@ VARIANTS = (
     "xiangqi",
     "manchu",
     "janggi",
+    "promojanggi",    
     "janggimodern",    
     "racingjanggi",   
     "allracingjanggi",      
@@ -168,6 +169,7 @@ VARIANT_ICONS = {
     "sittuyin": ":",
     "shogi": "K",
     "janggi": "=",
+    "promojanggi": "=",    
     "janggimodern": "=",    
     "racingjanggi": "=",    
     "allracingjanggi": "=",       
@@ -388,6 +390,7 @@ TRANSLATED_VARIANT_NAMES = {
     "nzjanggi": _("Nzjanggi"),
     "nnjanggi": _("Nnjanggi"),
     "janggi": _("Janggi"), 
+    "promojanggi": _("Promojanggi"),     
     "janggimodern": _("Janggimodern"),    
     "racingjanggi": _("Racingjanggi"),    
     "allracingjanggi": _("Allracingjanggi"),      

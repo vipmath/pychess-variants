@@ -50,6 +50,13 @@ promotionRank = 10
 whiteFlag = *10
 blackFlag = *1
 
+[promojanggi:janggimodern]
+startFen = rnba1abnr/4k4/1c5c1/p1p1p1p1p/9/9/P1P1P1P1P/1C5C1/4K4/RNBA1ABNR w - - 0 1
+promotionPieceTypes = -
+promotedPieceType = b:r n:r p:r c:r
+mandatoryPiecePromotion = true
+promotionRank = 10
+
 [chessjanggi:changgi]
 startFen = rnba1abnr/4k4/1c5c1/p1p1p1p1p/9/9/P1P1P1P1P/1C5C1/4K4/RNBA1ABNR w - - 0 1
 horse = -
