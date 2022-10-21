@@ -27,6 +27,29 @@ moveRepetitionIllegal = true
 nFoldRule = 4
 nMoveRule = 100
 
+[racingjanggi:changgi]
+startFen = rnba1abnr/4k4/1c5c1/p1p1p1p1p/9/9/P1P1P1P1P/1C5C1/4K4/RNBA1ABNR w - - 0 1
+flagPiece = k
+whiteFlag = *10
+blackFlag = *1 
+flagMove = true
+checking = false
+
+[allracingjanggi:changgi]
+startFen = rnba1abnr/4k4/1c5c1/p1p1p1p1p/9/9/P1P1P1P1P/1C5C1/4K4/RNBA1ABNR w - - 0 1
+king = -
+commoner = k
+extinctionValue = loss
+extinctionPieceTypes = k
+extinctionPseudoRoyal = true
+flagPiece = k
+promotionPieceTypes = -
+promotedPieceType = a:k r:k b:k n:k p:k c:k
+mandatoryPiecePromotion = true
+promotionRank = 10
+whiteFlag = *10
+blackFlag = *1
+
 [chessjanggi:changgi]
 startFen = rnba1abnr/4k4/1c5c1/p1p1p1p1p/9/9/P1P1P1P1P/1C5C1/4K4/RNBA1ABNR w - - 0 1
 horse = -

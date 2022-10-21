@@ -289,6 +289,19 @@ export const VARIANTS: { [name: string]: Variant } = {
         icon: "=",
     }),
 
+    racingjanggi: new Variant({
+        name: "racingjanggi", tooltip: () => _("Korean Chess, similar to Xiangqi but plays much differently. Tournament rules are used."),
+        startFen: "rnba1abnr/4k4/1c5c1/p1p1p1p1p/9/9/P1P1P1P1P/1C5C1/4K4/RNBA1ABNR w - - 0 1",
+        board: "janggi9x10", piece: "janggi",
+        firstColor: "Blue", secondColor: "Red",
+        pieceLetters: ["k", "a", "c", "r", "b", "n", "p"],
+        promoteableLetters: [],
+        timeControl: "byoyomi",
+        materialPoint: "janggi",
+        pass: true,
+        icon: "=",
+    }),
+
     chessjanggi: new Variant({
         name: "chessjanggi", tooltip: () => _("Korean Chess, similar to Xiangqi but plays much differently. Tournament rules are used."),
         startFen: "rnba1abnr/4k4/1c5c1/p1p1p1p1p/9/9/P1P1P1P1P/1C5C1/4K4/RNBA1ABNR w - - 0 1",
@@ -425,6 +438,38 @@ export const VARIANTS: { [name: string]: Variant } = {
         icon: "=",
     }),
 
+    janggimodern: new Variant({
+        name: "janggimodern", displayName: "카카오장기", tooltip: () => _("Korean Chess, similar to Xiangqi but plays much differently. Tournament rules are used."),
+        startFen: "rnba1abnr/4k4/1c5c1/p1p1p1p1p/9/9/P1P1P1P1P/1C5C1/4K4/RNBA1ABNR w - - 0 1",
+        board: "janggi9x10", piece: "janggi",
+        firstColor: "Blue", secondColor: "Red",
+        pieceLetters: ["k", "a", "c", "r", "b", "n", "p"],
+        promoteableLetters: [],
+        timeControl: "byoyomi",
+        materialPoint: "janggi",
+        alternateStart: {
+            '': '',
+            '초:마상상마 한:마상상마': "rnba1abnr/4k4/1c5c1/p1p1p1p1p/9/9/P1P1P1P1P/1C5C1/4K4/RNBA1ABNR w - - 0 1",			
+            '초:마상상마 한:마상마상': "rnba1anbr/4k4/1c5c1/p1p1p1p1p/9/9/P1P1P1P1P/1C5C1/4K4/RNBA1ABNR w - - 0 1",
+            '초:마상상마 한:상마상마': "rbna1abnr/4k4/1c5c1/p1p1p1p1p/9/9/P1P1P1P1P/1C5C1/4K4/RNBA1ABNR w - - 0 1",			
+            '초:마상상마 한:상마마상': "rbna1anbr/4k4/1c5c1/p1p1p1p1p/9/9/P1P1P1P1P/1C5C1/4K4/RNBA1ABNR w - - 0 1",			
+            '초:마상마상 한:마상상마': "rnba1abnr/4k4/1c5c1/p1p1p1p1p/9/9/P1P1P1P1P/1C5C1/4K4/RNBA1ANBR w - - 0 1",
+            '초:마상마상 한:마상마상': "rnba1anbr/4k4/1c5c1/p1p1p1p1p/9/9/P1P1P1P1P/1C5C1/4K4/RNBA1ANBR w - - 0 1",
+            '초:마상마상 한:상마상마': "rbna1abnr/4k4/1c5c1/p1p1p1p1p/9/9/P1P1P1P1P/1C5C1/4K4/RNBA1ANBR w - - 0 1",
+            '초:마상마상 한:상마마상': "rbna1anbr/4k4/1c5c1/p1p1p1p1p/9/9/P1P1P1P1P/1C5C1/4K4/RNBA1ANBR w - - 0 1",			
+            '초:상마상마 한:마상상마': "rnba1abnr/4k4/1c5c1/p1p1p1p1p/9/9/P1P1P1P1P/1C5C1/4K4/RBNA1ABNR w - - 0 1",
+            '초:상마상마 한:마상마상': "rnba1anbr/4k4/1c5c1/p1p1p1p1p/9/9/P1P1P1P1P/1C5C1/4K4/RBNA1ABNR w - - 0 1",
+            '초:상마상마 한:상마상마': "rbna1abnr/4k4/1c5c1/p1p1p1p1p/9/9/P1P1P1P1P/1C5C1/4K4/RBNA1ABNR w - - 0 1",
+            '초:상마상마 한:상마마상': "rbna1anbr/4k4/1c5c1/p1p1p1p1p/9/9/P1P1P1P1P/1C5C1/4K4/RBNA1ABNR w - - 0 1",			
+            '초:상마마상 한:마상상마': "rnba1abnr/4k4/1c5c1/p1p1p1p1p/9/9/P1P1P1P1P/1C5C1/4K4/RBNA1ANBR w - - 0 1",
+            '초:상마마상 한:마상마상': "rnba1anbr/4k4/1c5c1/p1p1p1p1p/9/9/P1P1P1P1P/1C5C1/4K4/RBNA1ANBR w - - 0 1",
+            '초:상마마상 한:상마상마': "rbna1abnr/4k4/1c5c1/p1p1p1p1p/9/9/P1P1P1P1P/1C5C1/4K4/RBNA1ANBR w - - 0 1",
+            '초:상마마상 한:상마마상': "rbna1anbr/4k4/1c5c1/p1p1p1p1p/9/9/P1P1P1P1P/1C5C1/4K4/RBNA1ANBR w - - 0 1"            
+        },
+        pass: true,
+        icon: "=",
+    }),
+
     janggihouse: new Variant({
         name: "janggihouse", displayName: "미친장기", tooltip: () => _("Korean Chess, similar to Xiangqi but plays much differently. Tournament rules are used."),
         startFen: "rnba1abnr/4k4/1c5c1/p1p1p1p1p/9/9/P1P1P1P1P/1C5C1/4K4/RNBA1ABNR[] w - - 0 1",
@@ -435,6 +480,25 @@ export const VARIANTS: { [name: string]: Variant } = {
         promoteableLetters: [],
         timeControl: "byoyomi",
         materialPoint: "janggi",
+        alternateStart: {
+            '': '',
+            '초:마상상마 한:마상상마': "rnba1abnr/4k4/1c5c1/p1p1p1p1p/9/9/P1P1P1P1P/1C5C1/4K4/RNBA1ABNR[] w - - 0 1",			
+            '초:마상상마 한:마상마상': "rnba1anbr/4k4/1c5c1/p1p1p1p1p/9/9/P1P1P1P1P/1C5C1/4K4/RNBA1ABNR[] w - - 0 1",
+            '초:마상상마 한:상마상마': "rbna1abnr/4k4/1c5c1/p1p1p1p1p/9/9/P1P1P1P1P/1C5C1/4K4/RNBA1ABNR[] w - - 0 1",			
+            '초:마상상마 한:상마마상': "rbna1anbr/4k4/1c5c1/p1p1p1p1p/9/9/P1P1P1P1P/1C5C1/4K4/RNBA1ABNR[] w - - 0 1",			
+            '초:마상마상 한:마상상마': "rnba1abnr/4k4/1c5c1/p1p1p1p1p/9/9/P1P1P1P1P/1C5C1/4K4/RNBA1ANBR[] w - - 0 1",
+            '초:마상마상 한:마상마상': "rnba1anbr/4k4/1c5c1/p1p1p1p1p/9/9/P1P1P1P1P/1C5C1/4K4/RNBA1ANBR[] w - - 0 1",
+            '초:마상마상 한:상마상마': "rbna1abnr/4k4/1c5c1/p1p1p1p1p/9/9/P1P1P1P1P/1C5C1/4K4/RNBA1ANBR[] w - - 0 1",
+            '초:마상마상 한:상마마상': "rbna1anbr/4k4/1c5c1/p1p1p1p1p/9/9/P1P1P1P1P/1C5C1/4K4/RNBA1ANBR[] w - - 0 1",			
+            '초:상마상마 한:마상상마': "rnba1abnr/4k4/1c5c1/p1p1p1p1p/9/9/P1P1P1P1P/1C5C1/4K4/RBNA1ABNR[] w - - 0 1",
+            '초:상마상마 한:마상마상': "rnba1anbr/4k4/1c5c1/p1p1p1p1p/9/9/P1P1P1P1P/1C5C1/4K4/RBNA1ABNR[] w - - 0 1",
+            '초:상마상마 한:상마상마': "rbna1abnr/4k4/1c5c1/p1p1p1p1p/9/9/P1P1P1P1P/1C5C1/4K4/RBNA1ABNR[] w - - 0 1",
+            '초:상마상마 한:상마마상': "rbna1anbr/4k4/1c5c1/p1p1p1p1p/9/9/P1P1P1P1P/1C5C1/4K4/RBNA1ABNR[] w - - 0 1",			
+            '초:상마마상 한:마상상마': "rnba1abnr/4k4/1c5c1/p1p1p1p1p/9/9/P1P1P1P1P/1C5C1/4K4/RBNA1ANBR[] w - - 0 1",
+            '초:상마마상 한:마상마상': "rnba1anbr/4k4/1c5c1/p1p1p1p1p/9/9/P1P1P1P1P/1C5C1/4K4/RBNA1ANBR[] w - - 0 1",
+            '초:상마마상 한:상마상마': "rbna1abnr/4k4/1c5c1/p1p1p1p1p/9/9/P1P1P1P1P/1C5C1/4K4/RBNA1ANBR[] w - - 0 1",
+            '초:상마마상 한:상마마상': "rbna1anbr/4k4/1c5c1/p1p1p1p1p/9/9/P1P1P1P1P/1C5C1/4K4/RBNA1ANBR[] w - - 0 1"            
+        },			
         captureToHand: true,
         pass: true,
         icon: "=",
@@ -1208,7 +1272,7 @@ const disabledVariants = [ "gothic", "gothhouse", "embassy", "gorogoro" ];
 export const enabledVariants = variants.filter(v => !disabledVariants.includes(v));
 
 const variantGroups: { [ key: string ]: { variants: string[] } } = {
-    xiangqi:  { variants: ["janggi", "hpjanggi", "nzjanggi", "nnjanggi", "chessjanggi",  "chessjanggihouse",  "centerjanggi",  "nudejanggi", "nudejanggihouse", "pocketjanggi", "pocketjanggil", "pocketjanggip", "pocketjanggihouse", "pocketjanggilhouse", "check3janggi", "check3janggihouse", "atomicjanggi", "atomicjanggihouse", "minijanggi", "minijanggihouse", "changgi", "racingkingsjanggi" , "coffeejanggi", "coffeejanggihouse", "janggihouse", "janggilhouse", "minixiangqi" , "xiangqi", "manchu"] },
+    xiangqi:  { variants: ["janggi", "janggimodern", "racingjanggi", "hpjanggi", "nzjanggi", "nnjanggi", "chessjanggi",  "chessjanggihouse",  "centerjanggi",  "nudejanggi", "nudejanggihouse", "pocketjanggi", "pocketjanggil", "pocketjanggip", "pocketjanggihouse", "pocketjanggilhouse", "check3janggi", "check3janggihouse", "atomicjanggi", "atomicjanggihouse", "minijanggi", "minijanggihouse", "changgi", "racingkingsjanggi" , "coffeejanggi", "coffeejanggihouse", "janggihouse", "janggilhouse", "minixiangqi" , "xiangqi", "manchu"] },
     standard: { variants: [ "chess", "antichess", "kingofthehill", "racingkings", "crazyhouse", "placement", "atomic" ] },
     sea:      { variants: [ "makruk", "makpong", "cambodian", "sittuyin", "asean" ] },
     shogi:    { variants: [ "shogi", "minishogi", "kyotoshogi", "dobutsu", "gorogoroplus", "torishogi" ] },
@@ -1510,6 +1574,8 @@ export function notation(variant: Variant): cg.Notation {
 
     switch (variant.name) {
         case 'janggi':
+        case 'janggimodern':		
+        case 'racingjanggi':		
         case 'hpjanggi':
         case 'nzjanggi':
         case 'nnjanggi':		
