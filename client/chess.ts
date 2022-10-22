@@ -69,6 +69,7 @@ export const PIECE_FAMILIES: { [key: string]: PieceFamily } = {
     tori: { pieceCSS: ["torii", "torik", "torim", "porti"] },
     xiangqi: { pieceCSS: ["xiangqi2d", "xiangqi2di", "xiangqi", "xiangqict3", "xiangqihnz", "xiangqict2", "xiangqihnzw", "xiangqict2w", "xiangqiwikim", "xiangqiKa", "xiangqittxqhnz", "xiangqittxqintl"] },
     janggi: { pieceCSS: ["janggihb", "janggihg", "janggiikak", "janggiikaw", "janggikak", "janggikaw", "janggiib", "janggiig"] },
+    promojanggi: { pieceCSS: ["janggihb", "janggihg"] },	
     shako: { pieceCSS: ["shako0", "shako1", "shako2"] },
     shogun: { pieceCSS: ["shogun0", "shogun1", "shogun2", "shogun3", "shogun4", "shogun5"] },
     orda: { pieceCSS: ["orda0", "orda1"] },
@@ -293,7 +294,7 @@ export const VARIANTS: { [name: string]: Variant } = {
     promojanggi: new Variant({
         name: "promojanggi", tooltip: () => _("Korean Chess, similar to Xiangqi but plays much differently. Tournament rules are used."),
         startFen: "rnba1abnr/4k4/1c5c1/p1p1p1p1p/9/9/P1P1P1P1P/1C5C1/4K4/RNBA1ABNR w - - 0 1",
-        board: "janggi9x10", piece: "janggi",
+        board: "janggi9x10", piece: "promojanggi",
         firstColor: "Blue", secondColor: "Red",
         pieceLetters: ["k", "a", "c", "r", "b", "n", "p"],
         promotion: "shogi",			

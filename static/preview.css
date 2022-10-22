@@ -250,6 +250,13 @@ label.piece.piece7.janggi {
     background-image: url('images/pieces/janggi/intlgreen/blue_king.svg');
 }
 
+label.piece.piece0.promojanggi {
+    background-image: url('images/pieces/janggi/hanjablue/blue_king.svg');
+}
+label.piece.piece1.promojanggi {
+    background-image: url('images/pieces/janggi/hanjagreen/blue_king.svg');
+}
+
 label.piece.piece0.shako {
     background-image: url('images/pieces/merida/shako/wC.svg');
 }
