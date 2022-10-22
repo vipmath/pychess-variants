@@ -1,11 +1,20 @@
 .janggi .cg-wrap piece.p-piece.white {
     background-image: url('../../images/pieces/janggi/hanjagreen/blue_pawn.svg');
 }
+.janggi .cg-wrap piece.pp-piece.white {
+    background-image: url('../../images/pieces/merida/wR.svg');
+}
 .janggi .cg-wrap piece.b-piece.white {
     background-image: url('../../images/pieces/janggi/hanjagreen/blue_elephant.svg');
 }
+.janggi .cg-wrap piece.pb-piece.white {
+    background-image: url('../../images/pieces/merida/wR.svg');
+}
 .janggi .cg-wrap piece.n-piece.white {
     background-image: url('../../images/pieces/janggi/hanjagreen/blue_horse.svg');
+}
+.janggi .cg-wrap piece.pn-piece.white {
+    background-image: url('../../images/pieces/merida/wR.svg');
 }
 .janggi .cg-wrap piece.r-piece.white {
     background-image: url('../../images/pieces/janggi/hanjagreen/blue_chariot.svg');
@@ -16,6 +25,9 @@
 .janggi .cg-wrap piece.c-piece.white {
     background-image: url('../../images/pieces/janggi/hanjagreen/blue_cannon.svg');
 }
+.janggi .cg-wrap piece.pc-piece.white {
+    background-image: url('../../images/pieces/merida/wR.svg');
+}
 .janggi .cg-wrap piece.k-piece.white {
     background-image: url('../../images/pieces/janggi/hanjagreen/blue_king.svg');
 }
@@ -23,11 +35,20 @@
 .janggi .cg-wrap piece.p-piece.black {
     background-image: url('../../images/pieces/janggi/hanjablue/red_pawn.svg');
 }
+.janggi .cg-wrap piece.pp-piece.black {
+    background-image: url('../../images/pieces/merida/bR.svg');
+}
 .janggi .cg-wrap piece.b-piece.black {
     background-image: url('../../images/pieces/janggi/hanjablue/red_elephant.svg');
 }
+.janggi .cg-wrap piece.pb-piece.black {
+    background-image: url('../../images/pieces/merida/bR.svg');
+}
 .janggi .cg-wrap piece.n-piece.black {
     background-image: url('../../images/pieces/janggi/hanjablue/red_horse.svg');
+}
+.janggi .cg-wrap piece.pn-piece.black {
+    background-image: url('../../images/pieces/merida/bR.svg');
 }
 .janggi .cg-wrap piece.r-piece.black {
     background-image: url('../../images/pieces/janggi/hanjablue/red_chariot.svg');
@@ -37,6 +58,9 @@
 }
 .janggi .cg-wrap piece.c-piece.black {
     background-image: url('../../images/pieces/janggi/hanjablue/red_cannon.svg');
+}
+.janggi .cg-wrap piece.pc-piece.black {
+    background-image: url('../../images/pieces/merida/bR.svg');
 }
 .janggi .cg-wrap piece.k-piece.black {
     background-image: url('../../images/pieces/janggi/hanjablue/red_king.svg');
