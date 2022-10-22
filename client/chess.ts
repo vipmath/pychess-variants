@@ -299,10 +299,10 @@ export const VARIANTS: { [name: string]: Variant } = {
         pieceLetters: ["k", "a", "c", "r", "b", "n", "p"],
         promotion: "shogi",			
         promoteableLetters: ["c", "b", "n", "p"],
-        isMandatoryPromotion: distanceBased({ p: 1, b: 1, n: 1, c: 1 }, 10),		
+       //isMandatoryPromotion: distanceBased({ p: 1, b: 1, n: 1, c: 1 }, 10),		
         timeControl: "byoyomi",
-        materialPoint: "janggi",
-        showPromoted: true,	
+       //materialPoint: "janggi",
+       // showPromoted: true,	
         pieceSound: "shogi",		
         pass: true,
         icon: "=",
@@ -1389,6 +1389,7 @@ export function validFen(variant: Variant, fen: string): boolean {
     const parts = fen.split(' ');
 
     if (variantName === 'pandemonium') return true;
+    if (variantName === 'promojanggi') return true;	
 
     // Need starting color
     if (parts.length < 2) return false;
