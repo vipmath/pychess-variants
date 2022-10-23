@@ -8,13 +8,13 @@
     background-image: url('../../images/pieces/janggi/hanjablue/blue_elephant.svg');
 }
 .promojanggi .cg-wrap piece.pb-piece.white {
-    background-image: url('../../images/pieces/merida/wR.svg');
+    background-image: url('../../images/pieces/merida/wB.svg');
 }
 .promojanggi .cg-wrap piece.n-piece.white {
     background-image: url('../../images/pieces/janggi/hanjablue/blue_horse.svg');
 }
 .promojanggi .cg-wrap piece.pn-piece.white {
-    background-image: url('../../images/pieces/merida/wR.svg');
+    background-image: url('../../images/pieces/merida/wN.svg');
 }
 .promojanggi .cg-wrap piece.r-piece.white {
     background-image: url('../../images/pieces/janggi/hanjablue/blue_chariot.svg');
@@ -29,7 +29,7 @@
     background-image: url('../../images/pieces/janggi/hanjablue/blue_cannon.svg');
 }
 .promojanggi .cg-wrap piece.pc-piece.white {
-    background-image: url('../../images/pieces/merida/wR.svg');
+    background-image: url('../../images/pieces/chennis/wCF.svg');
 }
 .promojanggi .cg-wrap piece.k-piece.white {
     background-image: url('../../images/pieces/janggi/hanjablue/blue_king.svg');
@@ -45,13 +45,13 @@
     background-image: url('../../images/pieces/janggi/hanjablue/red_elephant.svg');
 }
 .promojanggi .cg-wrap piece.pb-piece.black {
-    background-image: url('../../images/pieces/merida/bR.svg');
+    background-image: url('../../images/pieces/merida/bB.svg');
 }
 .promojanggi .cg-wrap piece.n-piece.black {
     background-image: url('../../images/pieces/janggi/hanjablue/red_horse.svg');
 }
 .promojanggi .cg-wrap piece.pn-piece.black {
-    background-image: url('../../images/pieces/merida/bR.svg');
+    background-image: url('../../images/pieces/merida/bN.svg');
 }
 .promojanggi .cg-wrap piece.r-piece.black {
     background-image: url('../../images/pieces/janggi/hanjablue/red_chariot.svg');
@@ -66,7 +66,7 @@
     background-image: url('../../images/pieces/janggi/hanjablue/red_cannon.svg');
 }
 .promojanggi .cg-wrap piece.pc-piece.black {
-    background-image: url('../../images/pieces/merida/bR.svg');
+    background-image: url('../../images/pieces/chennis/bCF.svg');
 }
 .promojanggi .cg-wrap piece.k-piece.black {
     background-image: url('../../images/pieces/janggi/hanjablue/red_king.svg');
