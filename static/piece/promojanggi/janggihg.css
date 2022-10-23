@@ -2,7 +2,7 @@
     background-image: url('../../images/pieces/janggi/hanjagreen/blue_pawn.svg');
 }
 .promojanggi .cg-wrap piece.pp-piece.white {
-    background-image: url('../../images/pieces/merida/wR.svg');
+    background-image: url('../../images/pieces/merida/wQ.svg');
 }
 .promojanggi .cg-wrap piece.b-piece.white {
     background-image: url('../../images/pieces/janggi/hanjagreen/blue_elephant.svg');
@@ -18,6 +18,9 @@
 }
 .promojanggi .cg-wrap piece.r-piece.white {
     background-image: url('../../images/pieces/janggi/hanjagreen/blue_chariot.svg');
+}
+.promojanggi .cg-wrap piece.pr-piece.white {
+    background-image: url('../../images/pieces/merida/wQ.svg');
 }
 .promojanggi .cg-wrap piece.a-piece.white {
     background-image: url('../../images/pieces/janggi/hanjagreen/blue_advisor.svg');
@@ -36,7 +39,7 @@
     background-image: url('../../images/pieces/janggi/hanjablue/red_pawn.svg');
 }
 .promojanggi .cg-wrap piece.pp-piece.black {
-    background-image: url('../../images/pieces/merida/bR.svg');
+    background-image: url('../../images/pieces/merida/bQ.svg');
 }
 .promojanggi .cg-wrap piece.b-piece.black {
     background-image: url('../../images/pieces/janggi/hanjablue/red_elephant.svg');
@@ -52,6 +55,9 @@
 }
 .promojanggi .cg-wrap piece.r-piece.black {
     background-image: url('../../images/pieces/janggi/hanjablue/red_chariot.svg');
+}
+.promojanggi .cg-wrap piece.pr-piece.black {
+    background-image: url('../../images/pieces/merida/bQ.svg');
 }
 .promojanggi .cg-wrap piece.a-piece.black {
     background-image: url('../../images/pieces/janggi/hanjablue/red_advisor.svg');

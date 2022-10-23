@@ -298,7 +298,7 @@ export const VARIANTS: { [name: string]: Variant } = {
         firstColor: "Blue", secondColor: "Red",
         pieceLetters: ["k", "a", "c", "r", "b", "n", "p"],
         promotion: "shogi",			
-        promoteableLetters: ["c", "b", "n", "p"],
+        promoteableLetters: ["c", "b", "n", "p", "r"],
        //isMandatoryPromotion: distanceBased({ p: 1, b: 1, n: 1, c: 1 }, 10),		
         timeControl: "byoyomi",
         materialPoint: "janggi",
@@ -1388,8 +1388,7 @@ export function validFen(variant: Variant, fen: string): boolean {
     const start = startfen.split(' ');
     const parts = fen.split(' ');
 
-    if (variantName === 'pandemonium') return true;
-    //if (variantName === 'promojanggi') return true;	
+    if (variantName === 'pandemonium') return true;	
 
     // Need starting color
     if (parts.length < 2) return false;
