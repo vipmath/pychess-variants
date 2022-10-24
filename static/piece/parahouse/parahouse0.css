@@ -40,6 +40,9 @@
 .parahouse .cg-wrap piece.pd-piece.white {
     background-image: url('../../images/pieces/parahouse/w+D.png');
 }
+.parahouse .cg-wrap piece.k-piece.white {
+    background-image: url('../../images/pieces/parahouse/wK.png');
+}
 
 .parahouse .cg-wrap piece.p-piece.black {
     background-image: url('../../images/pieces/parahouse/bP.png');
@@ -82,4 +85,7 @@
 }
 .parahouse .cg-wrap piece.pd-piece.black {
     background-image: url('../../images/pieces/parahouse/b+D.png');
+}
+.parahouse .cg-wrap piece.k-piece.black {
+    background-image: url('../../images/pieces/parahouse/bK.png');
 }
