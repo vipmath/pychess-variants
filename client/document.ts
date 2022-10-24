@@ -105,6 +105,7 @@ export function changePieceCSS(assetUrl: string, family: string, cssFile: string
         case "chennis": cssLinkIndex += 21; break;
         case "pandemonium": cssLinkIndex += 22; break;
         case "promojanggi": cssLinkIndex += 23; break;		
+        case "parahouse": cssLinkIndex += 24; break;			
         default: throw "Unknown piece family " + family;
     }
     const newUrl = `${assetUrl}/piece/${family}/${cssFile}.css`;

@@ -1,0 +1,85 @@
+.parahouse .cg-wrap piece.p-piece.white {
+    background-image: url('../../images/pieces/parahouse/wP.png');
+}
+.parahouse .cg-wrap piece.pp-piece.white {
+    background-image: url('../../images/pieces/parahouse/w+P.png');
+}
+.parahouse .cg-wrap piece.n-piece.white {
+    background-image: url('../../images/pieces/parahouse/wN.png');
+}
+.parahouse .cg-wrap piece.pn-piece.white {
+    background-image: url('../../images/pieces/parahouse/w+N.png');
+}
+.parahouse .cg-wrap piece.b-piece.white {
+    background-image: url('../../images/pieces/parahouse/wB.png');
+}
+.parahouse .cg-wrap piece.pb-piece.white {
+    background-image: url('../../images/pieces/parahouse/w+B.png');
+}
+.parahouse .cg-wrap piece.r-piece.white {
+    background-image: url('../../images/pieces/parahouse/wR.png');
+}
+.parahouse .cg-wrap piece.pr-piece.white {
+    background-image: url('../../images/pieces/parahouse/w+R.png');
+}
+.parahouse .cg-wrap piece.q-piece.white {
+    background-image: url('../../images/pieces/parahouse/wQ.png');
+}
+.parahouse .cg-wrap piece.pq-piece.white {
+    background-image: url('../../images/pieces/parahouse/w+Q.png');
+}
+.parahouse .cg-wrap piece.h-piece.white {
+    background-image: url('../../images/pieces/parahouse/wH.png');
+}
+.parahouse .cg-wrap piece.ph-piece.white {
+    background-image: url('../../images/pieces/parahouse/w+H.png');
+}
+.parahouse .cg-wrap piece.d-piece.white {
+    background-image: url('../../images/pieces/parahouse/wD.png');
+}
+.parahouse .cg-wrap piece.pd-piece.white {
+    background-image: url('../../images/pieces/parahouse/w+D.png');
+}
+
+.parahouse .cg-wrap piece.p-piece.black {
+    background-image: url('../../images/pieces/parahouse/bP.png');
+}
+.parahouse .cg-wrap piece.pp-piece.black {
+    background-image: url('../../images/pieces/parahouse/b+P.png');
+}
+.parahouse .cg-wrap piece.n-piece.black {
+    background-image: url('../../images/pieces/parahouse/bN.png');
+}
+.parahouse .cg-wrap piece.pn-piece.black {
+    background-image: url('../../images/pieces/parahouse/b+N.png');
+}
+.parahouse .cg-wrap piece.b-piece.black {
+    background-image: url('../../images/pieces/parahouse/bB.png');
+}
+.parahouse .cg-wrap piece.pb-piece.black {
+    background-image: url('../../images/pieces/parahouse/b+B.png');
+}
+.parahouse .cg-wrap piece.r-piece.black {
+    background-image: url('../../images/pieces/parahouse/bR.png');
+}
+.parahouse .cg-wrap piece.pr-piece.black {
+    background-image: url('../../images/pieces/parahouse/b+R.png');
+}
+.parahouse .cg-wrap piece.q-piece.black {
+    background-image: url('../../images/pieces/parahouse/bQ.png');
+}
+.parahouse .cg-wrap piece.pq-piece.black {
+    background-image: url('../../images/pieces/parahouse/b+Q.png');
+}
+.parahouse .cg-wrap piece.h-piece.black {
+    background-image: url('../../images/pieces/parahouse/bH.png');
+}
+.parahouse .cg-wrap piece.ph-piece.black {
+    background-image: url('../../images/pieces/parahouse/b+H.png');
+}
+.parahouse .cg-wrap piece.d-piece.black {
+    background-image: url('../../images/pieces/parahouse/bD.png');
+}
+.parahouse .cg-wrap piece.pd-piece.black {
+    background-image: url('../../images/pieces/parahouse/b+D.png');
+}

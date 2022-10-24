@@ -158,7 +158,8 @@ VARIANTS = (
     "shinobi",
     "empire",
     "ordamirror",
-    "pandemonium",    
+    "pandemonium",   
+    "parahouse",     
     "chak",
     "chennis",
 )
@@ -239,6 +240,7 @@ VARIANT_ICONS = {
     "empire": "♚",
     "ordamirror": "◩",
     "pandemonium": "F",    
+    "parahouse": "F",        
     "asean": "♻",
     "chak": "🐬",
     "chennis": "🎾",
@@ -439,7 +441,8 @@ TRANSLATED_VARIANT_NAMES = {
     "shinobi": _("Shinobi"),
     "empire": _("Empire"),
     "ordamirror": _("Orda Mirror"),
-    "pandemonium": _("Pandemonium"),    
+    "pandemonium": _("Pandemonium"),  
+    "parahouse": _("Parahouse"),    
     "chak": _("Chak"),
     "chennis": _("Chennis"),
 }
