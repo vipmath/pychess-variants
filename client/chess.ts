@@ -1404,6 +1404,7 @@ export function validFen(variant: Variant, fen: string): boolean {
     const parts = fen.split(' ');
 
     if (variantName === 'pandemonium') return true;	
+    if (variantName === 'parahouse') return true;		
 
     // Need starting color
     if (parts.length < 2) return false;
