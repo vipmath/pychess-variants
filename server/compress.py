@@ -77,7 +77,7 @@ V2C = {
     "ordamirror": "O",
     "torishogi": "T",
     "pandemonium": "U", 
-    "pandemonium": "U1",    
+    "parahouse": "U1",    
     "asean": "S",
     "chak": "C",
     "chennis": "H",
