@@ -229,6 +229,21 @@ nFoldRule = 4
 nMoveRule = 100
 diagonalLines = c1 e1 d2 c3 e3 c5 e5 d6 c7 e7
 
+[komajanggi:minijanggi]
+startFen = rn1nr/2k2/p1p1p/5/P1P1P/2K2/RN1NR w - - 0 1
+maxRank = 7
+maxFile = 5
+janggiCannon = -
+mobilityRegionWhiteKing = b1 c1 d1 b2 c2 d2 b3 c3 d3 
+mobilityRegionBlackKing = b5 c5 d5 b6 c6 d6 b7 c7 d7
+diagonalLines = b1 d1 c2 b3 d3 b5 d5 c6 b7 d7
+#mobilityRegionBlackCustomPiece1 = *1 *2 *3 *4 *5
+
+[komajanggihouse:komajanggi]
+startFen = rn1nr/2k2/p1p1p/5/P1P1P/2K2/RN1NR w - - 0 1
+pieceDrops = true
+capturesToHand = true
+
 [minijanggihouse:minijanggi]
 startFen = rcnkncr/p1ppp1p/7/7/7/P1PPP1P/RCNKNCR[] w - - 0 1
 pieceDrops = true
@@ -277,9 +292,19 @@ dropChecks = false
 startFen = 9/4k4/9/9/9/9/9/9/4K4/9[RRNNBBCCAAPPPPPrrnnbbccaappppp] w - - 0 1
 pieceDrops = true
 capturesToHand = true
+dropChecks = false
+
+[zombijanggi:janggimodern]
+startFen = 3a1a3/4k4/ppp3ppp/pnpnpnpnp/ppppppppp/9/P1P1P1P1P/1C5C1/4K4/RNBA1ABNR[] w - - 0 1
+pieceDrops = true
+capturesToHand = false
 dropChecks = true
-whiteDropRegion = *1 *2 *3 *4 *5
-blackDropRegion = *6 *7 *8 *9 *10
+
+[zombijanggihouse:janggimodern]
+startFen = 3a1a3/4k4/ppp3ppp/pnpnpnpnp/ppppppppp/9/P1P1P1P1P/1C5C1/4K4/RNBA1ABNR[] w - - 0 1
+pieceDrops = true
+capturesToHand = true
+dropChecks = true
 
 [pocketjanggi:janggimodern]
 startFen = 3a1a3/4k4/9/p1p1p1p1p/9/9/P1P1P1P1P/9/4K4/3A1A3[RRNNBBCCrrnnbbcc] w - - 0 1

@@ -40,6 +40,9 @@
 .janggi9x10 cg-board {
     background-image: url('images/board/JanggiBrown.svg');
 }
+.janggi5x7 cg-board {
+    background-image: url('images/board/komajanggi.svg');
+}
 .shogun8x8 cg-board {
     background-image: url('images/board/ShogunPlain.svg');
 }
