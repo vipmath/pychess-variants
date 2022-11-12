@@ -21,6 +21,9 @@ log = logging.getLogger(__name__)
 
 
 async def is_playing(request, user, ws):
+    # Prevent None user to handle seeks
+    if user is None:
+        return True
     # Prevent users to start new games if they have an unfinished one
     if user.game_in_progress is not None:
         game = await load_game(request.app, user.game_in_progress)
@@ -63,7 +66,7 @@ async def lobby_socket_handler(request):
         session.invalidate()
         return web.HTTPFound("/")
 
-    log.debug("-------------------------- NEW lobby WEBSOCKET by %s", user)
+    log.info("--- NEW lobby WEBSOCKET by %s from %s", session_user, request.remote)
 
     try:
         async for msg in ws:
